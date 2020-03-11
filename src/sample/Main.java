@@ -8,10 +8,7 @@ import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.Slider;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
@@ -22,13 +19,11 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.css.*;
 
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.File;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
+import java.io.FileReader;
+import java.util.Iterator;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONArray;
+import org.json.simple.parser.JSONParser;
 
 
 public class Main extends Application {
@@ -64,7 +59,7 @@ public class Main extends Application {
         menuTitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 30));
         grid.add(menuTitle, 0, 0, 2, 1);
 
-        gameLoad(grid);
+        gameSpecLoad(grid);
 
         //Name field for company name --not really necessary...
 //        Label compName = new Label("Company Name:");
@@ -94,10 +89,17 @@ public class Main extends Application {
                     Number newValue) {
                 valSlider.textProperty().setValue(
                         String.valueOf(newValue.intValue()));
+
                 //get value of slider and pass to instance variable for game creation
                 turns = (int)(turnSlider.getValue());
             }
         });
+        //some bug with the slider not being able to parse default value (50) so had to get around it
+        if (turns == null) {
+            turns = 50;
+        }
+
+
         grid.add(valSlider,2,2);
 
         //Agent Slider
@@ -126,6 +128,10 @@ public class Main extends Application {
             }
         });
         grid.add(valAgSlider,2,3);
+        //some bug with the slider not being able to parse default value (50) so had to get around it
+        if (agents == null) {
+            agents = 50;
+        }
 
 
         //creating start button and its handling events.
@@ -157,58 +163,38 @@ public class Main extends Application {
 
     }
 
-    public void gameLoad (GridPane grid){
+    public void gameSpecLoad (GridPane grid){
+
+        JSONParser parser = new JSONParser();
         try {
+            Object obj = parser.parse(new FileReader("src/sample/gameSpec.json"));
 
-            File gameSpec = new File("src/sample/gameSpec.xml");
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc = dBuilder.parse(gameSpec);
+            // A JSON object. Key value pairs are unordered. JSONObject supports java.util.Map interface.
+            JSONObject jsonObject = (JSONObject) obj;
 
-            //optional, but recommended
-            doc.getDocumentElement().normalize();
+            // A JSON array. JSONObject supports java.util.List interface.
+            JSONArray companyList = (JSONArray) jsonObject.get("Company List");
 
-            System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
-
-            NodeList nList = doc.getElementsByTagName("threat");
-
-            System.out.println("----------------------------");
-
-            for (int temp = 0; temp < nList.getLength(); temp++) {
-
-                Node nNode = nList.item(temp);
-
-                if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-
-                    Element eElement = (Element) nNode;
-
-                    //print treat ID
-                    System.out.println("Threat id : " + eElement.getAttribute("id"));
-                    //print Description
-                    System.out.println("Description : " + eElement.getElementsByTagName("description").item(0).getTextContent());
-                    //print Choices
-                    System.out.println("Choices : ");
-                    System.out.println(eElement.getElementsByTagName("choices").item(0).getTextContent());
-//                    NodeList choices = (NodeList) eElement.getElementsByTagName("choices").item(0);
-//                    for (int x = 0; x < choices.getLength(); x++) {
-//
-//                        Node nChoice = choices.item(x);
-//
-//                        if (nChoice.getNodeType() == Node.ELEMENT_NODE) {
-//
-//                            Element cc = (Element) nChoice;
-//                            System.out.println((cc.getElementsByTagName("choice").item(0).getTextContent()));
-//                        }
-//                    }
-                }
+            // An iterator over a collection. Iterator takes the place of Enumeration in the Java Collections Framework.
+            // Iterators differ from enumerations in two ways:
+            // 1. Iterators allow the caller to remove elements from the underlying collection during the iteration with well-defined semantics.
+            // 2. Method names have been improved.
+            Iterator<JSONObject> iterator = companyList.iterator();
+            while (iterator.hasNext()) {
+                System.out.println(iterator.next());
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //load game spec
+
+
+
+
+
+        //loaded game spec text
         Text gameLoadedTxt = new Text("Game Specification Loaded");
         gameLoadedTxt.setFont(Font.font("Tahoma", FontWeight.NORMAL, 10));
         grid.add(gameLoadedTxt,0, 1);
-
     }
 }
+

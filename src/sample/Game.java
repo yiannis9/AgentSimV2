@@ -41,7 +41,8 @@ public class Game {
         grid.setHgap(10);
         grid.setVgap(10);
         grid.setPadding(new Insets(25, 25, 25, 25));
-
+        //only for testing showing grids
+        grid.setGridLinesVisible(true);
 
         // init agents
         AgentController agent = null;
@@ -56,11 +57,14 @@ public class Game {
             //create a non-main agent container
             ContainerController container = runtime.createMainContainer(profile);
             try {
+                int gridRow= 0;
+                int gridCol = 1;
+                int circleCol = 2;
                 for (int agentcounter = 0; agentcounter <= Agents; agentcounter++) {
                     Object reference = new Object();
                     Object args[] = new Object[1];
                     args[0] = reference;
-                    agent = container.createNewAgent("agent no." + agentcounter,
+                    agent = container.createNewAgent("agent-" + agentcounter,
                             SimAgent.class.getName(),
                             args);
                     // Fire up the agent
@@ -69,9 +73,15 @@ public class Game {
                     //testing visuals of agents not launching from jade but from class directly
                     VisAgent agent1 = new VisAgent(agent);
                     agent1.text.setFill(Color.FIREBRICK);
-                    grid.add(agent1.text, 1, agentcounter);
-                    grid.add(agent1.circle, 2, agentcounter+1);
-
+                    int inc=2;
+                    if (agentcounter%10==0){
+                        gridCol+= 2;
+                        circleCol+=2;
+                        gridRow=0;
+                    }
+                    grid.add(agent1.text, gridCol, gridRow);
+                    grid.add(agent1.circle, circleCol, gridRow);
+                    gridRow++;
 
                 }
                 // --TESTING-- testing printing name of all agents.
@@ -90,11 +100,15 @@ public class Game {
         }
 
 
+
         createMenuBar(Turns, Agents);
-        canvas.setLeft(grid);
+        canvas.setCenter(grid);
 
     }
 
+    /*
+    method to initialise menu bar
+    */
     public void createMenuBar(Integer Turns, Integer Agents) {
         MenuBar menuBar = new MenuBar();
         final Menu menu1 = new Menu("Turn: "+ Turns);

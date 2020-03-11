@@ -7,6 +7,7 @@ import jade.domain.AMSService;
 import jade.domain.FIPAAgentManagement.AMSAgentDescription;
 import jade.domain.FIPAAgentManagement.SearchConstraints;
 
+/* as the name suggests this agent is responsible for listing agents in a container */
 public class AgentLister extends Agent {
     public AMSAgentDescription[] agentsList;
 

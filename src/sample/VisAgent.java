@@ -11,6 +11,7 @@ public class VisAgent {
     public Circle circle;
     public Integer infectionRate;
     public AgentController agent;
+    public String name;
 
     public VisAgent (AgentController agent){
         this.agent = agent;
@@ -18,16 +19,18 @@ public class VisAgent {
         try {
             text = new Text();
             //splitting at @ so that it looks cleaner in simulation gui
-            text.setText(this.agent.getName().split("@")[0]);
+            this.name = this.agent.getName().split("@")[0];
+            text.setText(this.name);
         } catch (Exception e) {
             e.printStackTrace();
         }
         //creating agent circle
         circle = new Circle();
-        circle.setCenterX(30.0f);
+        circle.setCenterX(10.0f);
         circle.setCenterY(10.0f);
-        circle.setRadius(10.0f);
+        circle.setRadius(5.0f);
         circle.setFill(Color.GREEN);
+
     }
 
     public AgentController getAgent () {
