@@ -16,9 +16,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 
@@ -38,11 +35,11 @@ public class Game {
         //grid will stay but testing scene changing
         GridPane grid = new GridPane();
 //        grid.setAlignment(Pos.TOP_CENTER);
-        grid.setHgap(10);
-        grid.setVgap(10);
+        grid.setHgap(15);
+        grid.setVgap(15);
         grid.setPadding(new Insets(25, 25, 25, 25));
         //only for testing showing grids
-        grid.setGridLinesVisible(true);
+//        grid.setGridLinesVisible(true);
 
         // init agents
         AgentController agent = null;
@@ -58,9 +55,9 @@ public class Game {
             ContainerController container = runtime.createMainContainer(profile);
             try {
                 int gridRow= 0;
-                int gridCol = 1;
-                int circleCol = 2;
-                for (int agentcounter = 0; agentcounter <= Agents; agentcounter++) {
+                int gridCol = 0;
+                int circleCol = 1;
+                for (int agentcounter = 0; agentcounter < Agents; agentcounter++) {
                     Object reference = new Object();
                     Object args[] = new Object[1];
                     args[0] = reference;
@@ -71,16 +68,15 @@ public class Game {
                     agent.start();
 
                     //testing visuals of agents not launching from jade but from class directly
-                    VisAgent agent1 = new VisAgent(agent);
-                    agent1.text.setFill(Color.FIREBRICK);
+                    VisAgent guiAgent = new VisAgent(agent);
                     int inc=2;
                     if (agentcounter%10==0){
                         gridCol+= 2;
                         circleCol+=2;
                         gridRow=0;
                     }
-                    grid.add(agent1.text, gridCol, gridRow);
-                    grid.add(agent1.circle, circleCol, gridRow);
+                    grid.add(guiAgent.text, gridCol, gridRow);
+                    grid.add(guiAgent.circle, circleCol, gridRow);
                     gridRow++;
 
                 }

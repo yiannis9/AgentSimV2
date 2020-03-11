@@ -4,6 +4,8 @@ import jade.core.Agent;
 import jade.wrapper.AgentController;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 
 public class VisAgent {
@@ -18,6 +20,7 @@ public class VisAgent {
         //creating agent label
         try {
             text = new Text();
+            text.setFont(Font.font("Tahoma", FontWeight.NORMAL, 15));
             //splitting at @ so that it looks cleaner in simulation gui
             this.name = this.agent.getName().split("@")[0];
             text.setText(this.name);
@@ -28,7 +31,7 @@ public class VisAgent {
         circle = new Circle();
         circle.setCenterX(10.0f);
         circle.setCenterY(10.0f);
-        circle.setRadius(5.0f);
+        circle.setRadius(10.0f);
         circle.setFill(Color.GREEN);
 
     }
