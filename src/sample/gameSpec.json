@@ -1,9 +1,20 @@
 {
-  "Name": "crunchify.com",
-  "Author": "App Shah",
-  "Company List": [
-    "Compnay: eBay",
-    "Compnay: Paypal",
-    "Compnay: Google"
+  "Type": "Threat",
+  "Desc": "The Tick ransomware attacks",
+  "ChoiceList": [
+    {
+      "CID": "A",
+        "Reward": "50",
+        "cDEsc":"Call IT support"
+      }
+    ,
+    {
+      "CID": "B",
+        "Reward": "10",
+        "cDEsc":"Pay ransom"
+    }
   ]
 }
+
+
+

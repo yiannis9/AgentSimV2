@@ -17,10 +17,12 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import javafx.css.*;
 
 import java.io.FileReader;
+import java.util.Collection;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
+
 import org.json.simple.JSONObject;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
@@ -173,21 +175,24 @@ public class Main extends Application {
             JSONObject jsonObject = (JSONObject) obj;
 
             // A JSON array. JSONObject supports java.util.List interface.
-            JSONArray companyList = (JSONArray) jsonObject.get("Company List");
+            JSONArray choiceList = (JSONArray) jsonObject.get("ChoiceList");
 
             // An iterator over a collection. Iterator takes the place of Enumeration in the Java Collections Framework.
-            // Iterators differ from enumerations in two ways:
-            // 1. Iterators allow the caller to remove elements from the underlying collection during the iteration with well-defined semantics.
-            // 2. Method names have been improved.
-            Iterator<JSONObject> iterator = companyList.iterator();
+            Iterator<JSONObject> iterator = choiceList.iterator();
             while (iterator.hasNext()) {
-                System.out.println(iterator.next());
+//                System.out.println(iterator.next());
+
+                    JSONObject Choice = (JSONObject) iterator.next();
+                    Iterator<String> keys = Choice.keySet().iterator();
+                    while (keys.hasNext()) {
+                        System.out.println(Choice.get(keys.next()));
+
+                    }
+
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-
 
 
 
