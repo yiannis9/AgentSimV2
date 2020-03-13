@@ -5,7 +5,7 @@ public class Choice {
     public String reward;
     public String cDesc;
 
-    public Choice (String CID, String reward, String cDesc) {
+    public Choice (Object CID, Object reward, Object cDesc) {
 
     }
 

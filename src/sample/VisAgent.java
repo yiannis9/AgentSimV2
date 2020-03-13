@@ -14,6 +14,7 @@ public class VisAgent {
     public Integer infectionRate;
     public AgentController agent;
     public String name;
+    public String state;
 
     public VisAgent (AgentController agent){
         this.agent = agent;

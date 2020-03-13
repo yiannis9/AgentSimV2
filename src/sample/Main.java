@@ -19,9 +19,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.FileReader;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
+import java.util.*;
 
 import org.json.simple.JSONObject;
 import org.json.simple.JSONArray;
@@ -31,6 +29,7 @@ import org.json.simple.parser.JSONParser;
 public class Main extends Application {
     public Integer agents;
     public Integer turns;
+    public ArrayList<Rule> finalRuleList;
 
     public static void main(String[] args) {
         launch(args);
@@ -61,14 +60,12 @@ public class Main extends Application {
         menuTitle.setFont(Font.font("Tahoma", FontWeight.NORMAL, 30));
         grid.add(menuTitle, 0, 0, 2, 1);
 
+        //create list to store jsonRules from jason file
+        finalRuleList = new ArrayList<>();
+
+        //call func to load game specification rules
         gameSpecLoad(grid);
 
-        //Name field for company name --not really necessary...
-//        Label compName = new Label("Company Name:");
-//        grid.add(compName, 0, 1);
-//
-//        TextField compTextField = new TextField();
-//        grid.add(compTextField, 1, 1);
 
         //Sliders UI - quite a lot of work for sliders to work
         Label turnsLabel = new Label("Turns:");
@@ -147,7 +144,7 @@ public class Main extends Application {
 
             @Override
             public void handle(ActionEvent e) {
-                Game game = new Game(agents,turns);
+                Game game = new Game(agents,turns,finalRuleList);
                 primaryStage.setScene(game.gameScene);
             }
         });
@@ -167,6 +164,7 @@ public class Main extends Application {
 
     public void gameSpecLoad (GridPane grid){
 
+
         JSONParser parser = new JSONParser();
         try {
             Object obj = parser.parse(new FileReader("src/sample/gameSpec.json"));
@@ -174,20 +172,44 @@ public class Main extends Application {
             // A JSON object. Key value pairs are unordered. JSONObject supports java.util.Map interface.
             JSONObject jsonObject = (JSONObject) obj;
 
-            // A JSON array. JSONObject supports java.util.List interface.
-            JSONArray choiceList = (JSONArray) jsonObject.get("ChoiceList");
+            // A JSON array. JSONObject supports return 0;java.util.List interface.
+            JSONArray jsonRules = (JSONArray) jsonObject.get("Rules");
 
             // An iterator over a collection. Iterator takes the place of Enumeration in the Java Collections Framework.
-            Iterator<JSONObject> iterator = choiceList.iterator();
-            while (iterator.hasNext()) {
-//                System.out.println(iterator.next());
+            for (int i = 0; i < jsonRules.size(); i++) {
 
-                    JSONObject Choice = (JSONObject) iterator.next();
-                    Iterator<String> keys = Choice.keySet().iterator();
-                    while (keys.hasNext()) {
-                        System.out.println(Choice.get(keys.next()));
+                // get json object at index i
+                JSONObject jsonRule = (JSONObject) jsonRules.get(i);
+                //extract type and description from json object
+                String type = (String) jsonRule.get("Type");
+                String desc = (String) jsonRule.get("Desc");
+                //create new rule and parse info
+                Rule rule = new Rule(type,desc);
 
-                    }
+                //testing
+                System.out.println(type);
+                System.out.println(desc);
+
+
+                //now we get the choice list of the rule to iterate over
+                JSONArray choices = (JSONArray) jsonRule.get("ChoiceList");
+                for (int x = 0; x < choices.size(); x++) {
+                    //need to parse it as a new json object at index x
+                    JSONObject chObj =  (JSONObject) choices.get(x);
+                    //now we add
+                    Choice ch = new Choice(chObj.get("CID"),
+                            chObj.get("Reward"),
+                            chObj.get("cDesc"));
+                    rule.choiceList.add(ch);
+
+                    //testing
+                    System.out.println(chObj.get("CID"));
+                    System.out.println(chObj.get("Reward"));
+                    System.out.println(chObj.get("cDesc"));
+
+                }
+                System.out.println();
+                finalRuleList.add(rule);
 
             }
         } catch (Exception e) {

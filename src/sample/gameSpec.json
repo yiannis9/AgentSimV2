@@ -1,17 +1,37 @@
 {
-  "Type": "Threat",
-  "Desc": "The Tick ransomware attacks",
-  "ChoiceList": [
+  "Rules":
+  [
     {
-      "CID": "A",
-        "Reward": "50",
-        "cDEsc":"Call IT support"
-      }
-    ,
+      "Type": "Threat",
+      "Desc": "The Tick ransomware attacks",
+      "ChoiceList": [
+        {
+          "CID": "A",
+          "Reward": "50",
+          "cDesc": "Call IT support"
+        },
+        {
+          "CID": "B",
+          "Reward": "10",
+          "cDesc": "Pay ransom"
+        }
+      ]
+    },
     {
-      "CID": "B",
-        "Reward": "10",
-        "cDEsc":"Pay ransom"
+      "Type": "Threat",
+      "Desc": "Your account has been compromised",
+      "ChoiceList": [
+        {
+          "CID": "A",
+          "Reward": "50",
+          "cDesc": "Call IT support"
+        },
+        {
+          "CID": "B",
+          "Reward": "10",
+          "cDesc": "Quit Job"
+        }
+      ]
     }
   ]
 }

@@ -18,6 +18,8 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+
 
 public class Game {
     public Scene gameScene;
@@ -25,8 +27,9 @@ public class Game {
     public Integer Agents;
     public Integer Turns;
     public BorderPane canvas;
+    public ArrayList ruleList;
 
-    public Game(Integer Agents, Integer Turns) {
+    public Game(Integer Agents, Integer Turns, ArrayList ruleList) {
         //init stack node and scene
         canvas = new BorderPane();
         gameScene = new Scene(canvas, 1240, 720);
