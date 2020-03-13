@@ -4,6 +4,7 @@ import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.AID;
 import jade.core.behaviours.OneShotBehaviour;
+import jade.core.behaviours.SimpleBehaviour;
 import jade.core.behaviours.TickerBehaviour;
 import jade.domain.AMSService;
 import jade.domain.FIPAAgentManagement.AMSAgentDescription;
@@ -13,23 +14,34 @@ import java.util.Random;
 
 public class SimAgent extends Agent {
 
-    protected void setup() {
+    public char curChoice;
 
-        addBehaviour(new TickerBehaviour(this, 30000) {
-            public void onTick() {
-                String abc = "AB";
-                Random rand = new Random();
-                char letter = abc.charAt(rand.nextInt(abc.length()));
-                System.out.println(letter);
-            }
-        });
+    protected void setup() {
+        //ticker behaviour example
+//        addBehaviour(new TickerBehaviour(this, 30000) {
+//            public void onTick() {
+//                String abc = "AB";
+//                Random rand = new Random();
+//                char letter = abc.charAt(rand.nextInt(abc.length()));
+//                System.out.println(letter);
+//            }
+//        });
+
+        //simple behaviour example
         addBehaviour(new OneShotBehaviour() {
             @Override
             public void action() {
-                System.out.println("Hello World. My name is "+ getLocalName());
+                String abc = "AB";
+                Random rand = new Random();
+                curChoice = abc.charAt(rand.nextInt(abc.length()));
+
+                System.out.println( getAID()+ " has made choice "+ curChoice);
             }
         });
 
+    }
 
+    public char getCurChoice(){
+        return this.curChoice;
     }
 }

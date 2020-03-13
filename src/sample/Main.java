@@ -155,7 +155,7 @@ public class Main extends Application {
 
         //creating a scene to pass to stage
         Scene menu = new Scene(root, 1240, 720);
-        menu.setFill(Color.LIGHTBLUE);
+
 
         //pass scene to the stage
         primaryStage.setScene(menu);
