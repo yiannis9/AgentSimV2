@@ -10,6 +10,9 @@ import jade.domain.AMSService;
 import jade.domain.FIPAAgentManagement.AMSAgentDescription;
 import jade.domain.FIPAAgentManagement.SearchConstraints;
 import jade.wrapper.AgentController;
+
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.Random;
 
 public class SimAgent extends Agent {
@@ -17,31 +20,47 @@ public class SimAgent extends Agent {
     public char curChoice;
 
     protected void setup() {
-        //ticker behaviour example
-//        addBehaviour(new TickerBehaviour(this, 30000) {
-//            public void onTick() {
-//                String abc = "AB";
-//                Random rand = new Random();
-//                char letter = abc.charAt(rand.nextInt(abc.length()));
-//                System.out.println(letter);
-//            }
-//        });
 
-        //simple behaviour example
-        addBehaviour(new OneShotBehaviour() {
+        try {
+            Object[] args = getArguments();
+            String s;
+            if (args != null) {
+                for (int i = 0; i < args.length; i++) {
+                    s = (String) args[i];
+                    System.out.println("p" + i + ": " + s);
+                }
+
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+        addBehaviour(new SimpleBehaviour() {
+
             @Override
             public void action() {
+
                 String abc = "AB";
                 Random rand = new Random();
                 curChoice = abc.charAt(rand.nextInt(abc.length()));
+                System.out.println( getAID() + " has voted " + curChoice);
 
-                System.out.println( getAID()+ " has made choice "+ curChoice);
+
+            }
+
+            @Override
+            public boolean done() {
+                return true;
             }
         });
 
+
+
     }
 
-    public char getCurChoice(){
-        return this.curChoice;
+
+    public char getChoice(){
+        return curChoice;
     }
 }

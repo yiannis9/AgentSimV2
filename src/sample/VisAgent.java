@@ -39,7 +39,6 @@ public class VisAgent extends SimAgent{
         circle.setFill(Color.GREEN);
 
         greetAgent(logger);
-
     }
 
     public void greetAgent (Logger logger) {

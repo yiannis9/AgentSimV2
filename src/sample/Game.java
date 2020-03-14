@@ -1,17 +1,17 @@
 package sample;
 
 import jade.core.*;
-import jade.domain.AMSService;
-import jade.domain.FIPAAgentManagement.AMSAgentDescription;
-import jade.domain.FIPAAgentManagement.SearchConstraints;
 import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
 import jade.wrapper.StaleProxyException;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -29,6 +29,7 @@ public class Game {
     public BorderPane canvas;
     public ArrayList<Rule> ruleList;
     public Logger logger;
+    public jade.core.Runtime runtime;
 
     public Game(Integer Agents, Integer Turns, ArrayList<Rule> ruleList) {
         //init stack node and scene
@@ -45,11 +46,15 @@ public class Game {
         //only for testing showing grids
 //        grid.setGridLinesVisible(true);
 
+        //run initialise logger method
         initLogger();
 
 
-        //initiallise agents
+        //initialise agents
         initAgents(grid,Agents);
+
+        //create exit button
+        genExitBtn();
 
 
         //calling method that creates the top menu displaying agents and turns
@@ -58,19 +63,47 @@ public class Game {
 
     }
 
-    /*
-    method to initialise menu bar
-    */
+
+    //method to initialise menu bar
     public void createMenuBar(Integer Turns, Integer Agents) {
         MenuBar menuBar = new MenuBar();
+
         final Menu menu1 = new Menu("Turn: "+ Turns);
         final Menu menu2 = new Menu("Agents: "+ Agents);
+
+
 
         menuBar.getMenus().addAll(menu1, menu2);
         canvas.setTop(menuBar);
 
     }
 
+    public void genExitBtn(){
+        // Exit Button
+        Button exitBtn = new Button("Exit");
+        exitBtn.setOnAction(new EventHandler<ActionEvent>() {
+
+            @Override
+            public void handle(ActionEvent e) {
+                Stage stage = (Stage) canvas.getScene().getWindow();
+
+                runtime.shutDown();
+
+                stage.close();
+            }
+        });
+        StackPane bottomStack = new StackPane();
+
+        //Retrieving the observable list of the Stack Pane
+        ObservableList<Node> list = bottomStack.getChildren();
+
+        //Adding all the nodes to the pane
+        list.addAll(exitBtn);
+        canvas.setBottom(bottomStack);
+
+    }
+
+    //initialise logger method. saves log in SimLog.log
     public void initLogger () {
         logger = Logger.getLogger("MyLog");
         FileHandler fh;
@@ -92,12 +125,13 @@ public class Game {
 
     }
 
+    //initialise all agents method and order them in grid
     public void initAgents (GridPane grid,Integer Agents) {
         // init agents
         AgentController agent = null;
         try {
             //Get the JADE runtime interface (singleton)
-            jade.core.Runtime runtime = jade.core.Runtime.instance();
+            runtime = jade.core.Runtime.instance();
             //Create a Profile, where the launch arguments are stored
             Profile profile = new ProfileImpl();
             profile.setParameter(Profile.CONTAINER_NAME, "TestContainer");
@@ -145,6 +179,7 @@ public class Game {
 
     }
 
+    //tester function. creates agentLister which prints all agents in the container.
     public void initAgentLister (ContainerController container) throws StaleProxyException {
         Object reference = new Object();
         Object args[] = new Object[1];

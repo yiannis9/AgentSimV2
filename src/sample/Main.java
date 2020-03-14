@@ -159,7 +159,6 @@ public class Main extends Application {
 
         //pass scene to the stage
         primaryStage.setScene(menu);
-
     }
 
     public void gameSpecLoad (GridPane grid){

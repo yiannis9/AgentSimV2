@@ -1,22 +1,22 @@
-Mar 13, 2020 9:38:31 PM sample.Game initLogger
+Mar 14, 2020 4:58:51 PM sample.Game initLogger
 INFO: LOGGER INITIALISED
-Mar 13, 2020 9:38:32 PM sample.VisAgent greetAgent
+Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
 INFO: Hello! My name is agent-0
-Mar 13, 2020 9:38:32 PM sample.VisAgent greetAgent
+Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
 INFO: Hello! My name is agent-1
-Mar 13, 2020 9:38:32 PM sample.VisAgent greetAgent
+Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
 INFO: Hello! My name is agent-2
-Mar 13, 2020 9:38:32 PM sample.VisAgent greetAgent
+Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
 INFO: Hello! My name is agent-3
-Mar 13, 2020 9:38:32 PM sample.VisAgent greetAgent
+Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
 INFO: Hello! My name is agent-4
-Mar 13, 2020 9:38:32 PM sample.VisAgent greetAgent
+Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
 INFO: Hello! My name is agent-5
-Mar 13, 2020 9:38:32 PM sample.VisAgent greetAgent
+Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
 INFO: Hello! My name is agent-6
-Mar 13, 2020 9:38:32 PM sample.VisAgent greetAgent
+Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
 INFO: Hello! My name is agent-7
-Mar 13, 2020 9:38:32 PM sample.VisAgent greetAgent
+Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
 INFO: Hello! My name is agent-8
-Mar 13, 2020 9:38:32 PM sample.VisAgent greetAgent
+Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
 INFO: Hello! My name is agent-9
