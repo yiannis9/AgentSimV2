@@ -1,5 +1,6 @@
 package sample;
 
+import jade.wrapper.StaleProxyException;
 import javafx.application.Application;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -144,7 +145,12 @@ public class Main extends Application {
 
             @Override
             public void handle(ActionEvent e) {
-                Game game = new Game(agents,turns,finalRuleList);
+                Game game = null;
+                try {
+                    game = new Game(agents,turns,finalRuleList);
+                } catch (StaleProxyException ex) {
+                    ex.printStackTrace();
+                }
                 primaryStage.setScene(game.gameScene);
             }
         });

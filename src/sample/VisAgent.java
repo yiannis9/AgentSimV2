@@ -22,15 +22,13 @@ public class VisAgent extends SimAgent{
     public VisAgent (AgentController agent, Logger logger) throws StaleProxyException {
         this.agent = agent;
         //creating agent label
-        try {
+
             text = new Text();
             text.setFont(Font.font("Tahoma", FontWeight.NORMAL, 15));
             //splitting at @ so that it looks cleaner in simulation gui
             this.name = this.agent.getName().split("@")[0];
             text.setText(this.name);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
         //creating agent circle
         circle = new Circle();
         circle.setCenterX(10.0f);
@@ -38,13 +36,15 @@ public class VisAgent extends SimAgent{
         circle.setRadius(10.0f);
         circle.setFill(Color.GREEN);
 
-        greetAgent(logger);
+        //testing logger
+        greetLog(logger);
     }
 
-    public void greetAgent (Logger logger) {
-        // the following statement is used to log any messages
-        logger.info("Hello! My name is " + this.name);
+    public void greetLog (Logger logger) {
+//         the following statement is used to log any messages
+        logger.info(this.name + " initialised");
     }
+
 
 
 }

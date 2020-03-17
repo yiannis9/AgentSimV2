@@ -4,6 +4,7 @@ import jade.core.*;
 import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
 import jade.wrapper.StaleProxyException;
+import javafx.beans.Observable;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -16,6 +17,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
@@ -28,10 +30,13 @@ public class Game {
     public Integer Turns;
     public BorderPane canvas;
     public ArrayList<Rule> ruleList;
+    public ArrayList<String> rolesList;
     public Logger logger;
     public jade.core.Runtime runtime;
+    private boolean gameRunning = true;
+    private Integer turnsTaken=0;
 
-    public Game(Integer Agents, Integer Turns, ArrayList<Rule> ruleList) {
+    public Game(Integer Agents, Integer Turns, ArrayList<Rule> ruleList) throws StaleProxyException {
         //init stack node and scene
         canvas = new BorderPane();
         gameScene = new Scene(canvas, 1240, 720);
@@ -50,16 +55,16 @@ public class Game {
         initLogger();
 
 
-        //initialise agents
-        initAgents(grid,Agents);
 
         //create exit button
         genExitBtn();
 
-
         //calling method that creates the top menu displaying agents and turns
         createMenuBar(Turns, Agents);
         canvas.setCenter(grid);
+
+        //initialise agents
+        initAgents(grid,Agents);
 
     }
 
@@ -68,10 +73,8 @@ public class Game {
     public void createMenuBar(Integer Turns, Integer Agents) {
         MenuBar menuBar = new MenuBar();
 
-        final Menu menu1 = new Menu("Turn: "+ Turns);
+        final Menu menu1 = new Menu("Turn: "+ turnsTaken + " / " + Turns);
         final Menu menu2 = new Menu("Agents: "+ Agents);
-
-
 
         menuBar.getMenus().addAll(menu1, menu2);
         canvas.setTop(menuBar);
@@ -129,6 +132,7 @@ public class Game {
     public void initAgents (GridPane grid,Integer Agents) {
         // init agents
         AgentController agent = null;
+        VisAgent guiAgent = null;
         try {
             //Get the JADE runtime interface (singleton)
             runtime = jade.core.Runtime.instance();
@@ -138,24 +142,40 @@ public class Game {
             profile.setParameter(Profile.MAIN_HOST, "localhost");
             //create a non-main agent container
             ContainerController container = runtime.createMainContainer(profile);
+
+            //create Engine agent which handles all other agents
+            Object reference = new Object();
+            Object args[] = new Object[1];
+            args[0] = reference;
+            AgentController agentEngine = container.createNewAgent("agent-engine", EngineAgent.class.getName(), args);
+            agentEngine.start();
+
+            //managing roles
+            rolesList = new ArrayList<String>();
+            rolesList.add("Supervisor");
+            rolesList.add( "CEO");
+            rolesList.add("Employee");
+            rolesList.add("ITadmin");
+            Random randRole = new Random();
             try {
                 int gridRow= 0;
                 int gridCol = 0;
                 int circleCol = 1;
                 for (int agentcounter = 0; agentcounter < Agents; agentcounter++) {
-                    Object reference = new Object();
-                    Object args[] = new Object[1];
-                    args[0] = reference;
+                    //getting random roles and passing to agents
+                    String role = rolesList.get(randRole.nextInt(rolesList.size()));
+                    args[0] = role;
                     agent = container.createNewAgent("agent-" + agentcounter,
-                            SimAgent.class.getName(),
-                            args);
+                            SimAgent.class.getName(), args
+                    );
+
                     // Fire up the agent
                     agent.start();
 
                     //class wrapping abstraction
                     //VisAgent uses SimAgent which is the actual agent class connected to jade
                     //VisAgent is only responsible for the gui visuals
-                    VisAgent guiAgent = new VisAgent(agent,logger);
+                    guiAgent = new VisAgent(agent, logger);
                     int inc=2;
                     if (agentcounter%10==0){
                         gridCol+= 2;
@@ -173,6 +193,8 @@ public class Game {
             } catch (StaleProxyException e) {
                 e.printStackTrace();
             }
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }

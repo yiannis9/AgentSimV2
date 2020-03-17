@@ -1,22 +1,42 @@
-Mar 14, 2020 4:58:51 PM sample.Game initLogger
+Mar 17, 2020 7:18:27 PM sample.Game initLogger
 INFO: LOGGER INITIALISED
-Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
-INFO: Hello! My name is agent-0
-Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
-INFO: Hello! My name is agent-1
-Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
-INFO: Hello! My name is agent-2
-Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
-INFO: Hello! My name is agent-3
-Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
-INFO: Hello! My name is agent-4
-Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
-INFO: Hello! My name is agent-5
-Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
-INFO: Hello! My name is agent-6
-Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
-INFO: Hello! My name is agent-7
-Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
-INFO: Hello! My name is agent-8
-Mar 14, 2020 4:58:51 PM sample.VisAgent greetAgent
-INFO: Hello! My name is agent-9
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-0initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-1initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-2initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-3initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-4initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-5initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-6initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-7initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-8initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-9initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-10initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-11initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-12initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-13initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-14initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-15initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-16initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-17initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-18initialised
+Mar 17, 2020 7:18:29 PM sample.VisAgent greetLog
+INFO: agent-19initialised

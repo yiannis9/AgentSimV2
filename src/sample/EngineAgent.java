@@ -4,41 +4,25 @@ import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.AID;
 import jade.core.behaviours.OneShotBehaviour;
-import jade.core.behaviours.SimpleBehaviour;
-import jade.core.behaviours.TickerBehaviour;
-import jade.domain.AMSService;
-import jade.domain.FIPAAgentManagement.AMSAgentDescription;
-import jade.domain.FIPAAgentManagement.SearchConstraints;
 import jade.lang.acl.ACLMessage;
-import jade.wrapper.AgentController;
 
 import javax.swing.*;
 import java.util.Random;
 
 
-public class SimAgent extends Agent {
+public class EngineAgent extends Agent {
 
     public char curChoice;
 
     public String curPartner;
 
-    public String state = "active";
-
-    public String role;
 
     protected void setup() {
-        //this is a gimmick to get random choices A or B
+
         String agName = getAID().getName().split("@")[0];
         String abc = "AB";
         Random rand = new Random();
         curChoice = abc.charAt(rand.nextInt(abc.length()));
-
-        //getting roles from arguments
-        Object[] args = getArguments();
-        String s;
-        if (args != null) {
-                role = (String) args[0];
-            }
 
         //sending ACL messages
         addBehaviour(new OneShotBehaviour() {
@@ -61,8 +45,8 @@ public class SimAgent extends Agent {
 
                     JOptionPane.showMessageDialog(null,
                             "Message received : "
-                            + msg.getContent()
-                            );
+                                    + msg.getContent()
+                    );
                 } else {
                     block();
                 }
