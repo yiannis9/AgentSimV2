@@ -8,33 +8,32 @@ import jade.lang.acl.ACLMessage;
 
 import javax.swing.*;
 import java.util.Random;
+import java.util.logging.Logger;
 
 
 public class EngineAgent extends Agent {
 
-    public char curChoice;
-
-    public String curPartner;
-
-
     protected void setup() {
+        //setting up variables
+        char curChoice;
+        String curTarget;
+        Integer Turns=0;
 
         String agName = getAID().getName().split("@")[0];
         String abc = "AB";
         Random rand = new Random();
         curChoice = abc.charAt(rand.nextInt(abc.length()));
 
-        //sending ACL messages
-        addBehaviour(new OneShotBehaviour() {
-            @Override
-            public void action() {
-                ACLMessage msgChoice = new ACLMessage(ACLMessage.INFORM);
-                msgChoice.setContent(String.valueOf(curChoice));
-                msgChoice.addReceiver(new AID("agent-engine", AID.ISLOCALNAME));
-                send(msgChoice);
+        //getting roles from arguments
+        Object[] args = getArguments();
+        if (args != null) {
+            Turns = (Integer) args[0];
 
-            }
-        });
+            //managed to get logger as argument
+            Logger logger = (Logger) args[1];
+            logger.info("GAME ENGINE AGENT INITIALISED");
+        }
+
 
         //receiving ACl messages
         addBehaviour(new CyclicBehaviour() {
@@ -53,6 +52,24 @@ public class EngineAgent extends Agent {
             }
         });
 
+
+
+        //sending ACL messages
+        addBehaviour(new OneShotBehaviour() {
+            @Override
+            public void action() {
+                ACLMessage msgChoice = new ACLMessage(ACLMessage.INFORM);
+                msgChoice.setContent(String.valueOf(curChoice));
+                msgChoice.addReceiver(new AID("agent-engine", AID.ISLOCALNAME));
+                send(msgChoice);
+
+            }
+        });
+
+
+    }
+
+    public void getTurns(Integer turns) {
 
     }
 

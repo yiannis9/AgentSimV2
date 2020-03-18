@@ -4,7 +4,7 @@ import jade.core.*;
 import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
 import jade.wrapper.StaleProxyException;
-import javafx.beans.Observable;
+
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -13,10 +13,14 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
+import javafx.scene.shape.Circle;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Random;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
@@ -35,6 +39,7 @@ public class Game {
     public jade.core.Runtime runtime;
     private boolean gameRunning = true;
     private Integer turnsTaken=0;
+    public HashMap<String, int[]> agentsGrid;
 
     public Game(Integer Agents, Integer Turns, ArrayList<Rule> ruleList) throws StaleProxyException {
         //init stack node and scene
@@ -64,7 +69,60 @@ public class Game {
         canvas.setCenter(grid);
 
         //initialise agents
-        initAgents(grid,Agents);
+        initAgents(grid,Agents,Turns,logger);
+
+//        createAgentMatrix(grid,Agents,agentsGrid);
+
+
+    }
+
+    //tester method to check placement of agents on grid
+    public void createAgentMatrix (GridPane grid,Integer Agents,HashMap<String,int[]> agentsGrid) {
+        //get every +2 from list
+        try {
+            agentsGrid = new HashMap<String, int[]>();
+            ObservableList<Node> list = grid.getChildren();
+            //loop over list
+//            Integer agCCoord = 0;
+            Integer agTCoord = 0;
+            int[] arr = {0,1};
+            String agentName = null;
+            for (int i = 1; i < (list.size()/2); i++) {
+                //check if Text or Circle and if text get the name of agent belonging to
+//                if (obj.getClass().getName() == "javafx.scene.text.Text") {
+//
+//                    Text agText = (Text) obj;
+//                    agentName = agText.getText();
+//                    agTCoord = list.indexOf(obj);
+//                    System.out.println(agentName + " at index: " + agTCoord);
+//                    arr[0] = agTCoord;
+//                } else {
+//                    Circle agCircle = (Circle) obj;
+//                    agCCoord = list.indexOf(obj);
+//                    System.out.println("Circle at index " + agCCoord);
+//                    arr[1] = agCCoord;
+//                }
+
+                //adding keys: Name, Text and Circle Coordinates
+
+                agentName = "agent-" + agTCoord;
+                agentsGrid.put(agentName, arr);
+                System.out.println(Arrays.toString(agentsGrid.get(agentName)));
+                arr[0] += 2;
+                arr[1] += 2;
+                agTCoord += 1;
+
+            }
+            //so the coordinates go 0,1..2,3...4,5...cant waste anymore time on this...
+
+
+
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
 
     }
 
@@ -129,7 +187,7 @@ public class Game {
     }
 
     //initialise all agents method and order them in grid
-    public void initAgents (GridPane grid,Integer Agents) {
+    public void initAgents (GridPane grid,Integer Agents, Integer Turns, Logger logger) {
         // init agents
         AgentController agent = null;
         VisAgent guiAgent = null;
@@ -144,10 +202,10 @@ public class Game {
             ContainerController container = runtime.createMainContainer(profile);
 
             //create Engine agent which handles all other agents
-            Object reference = new Object();
-            Object args[] = new Object[1];
-            args[0] = reference;
-            AgentController agentEngine = container.createNewAgent("agent-engine", EngineAgent.class.getName(), args);
+            Object argsEngine[] = new Object[2];
+            argsEngine[0] = Turns;
+            argsEngine[1] = logger;
+            AgentController agentEngine = container.createNewAgent("agent-engine", EngineAgent.class.getName(), argsEngine);
             agentEngine.start();
 
             //managing roles
@@ -161,13 +219,14 @@ public class Game {
                 int gridRow= 0;
                 int gridCol = 0;
                 int circleCol = 1;
+                Object args[] = new Object[1];
+                args[0] = Turns;
                 for (int agentcounter = 0; agentcounter < Agents; agentcounter++) {
                     //getting random roles and passing to agents
                     String role = rolesList.get(randRole.nextInt(rolesList.size()));
                     args[0] = role;
                     agent = container.createNewAgent("agent-" + agentcounter,
-                            SimAgent.class.getName(), args
-                    );
+                            SimAgent.class.getName(), args);
 
                     // Fire up the agent
                     agent.start();

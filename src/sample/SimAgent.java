@@ -4,13 +4,10 @@ import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.AID;
 import jade.core.behaviours.OneShotBehaviour;
-import jade.core.behaviours.SimpleBehaviour;
-import jade.core.behaviours.TickerBehaviour;
 import jade.domain.AMSService;
 import jade.domain.FIPAAgentManagement.AMSAgentDescription;
 import jade.domain.FIPAAgentManagement.SearchConstraints;
 import jade.lang.acl.ACLMessage;
-import jade.wrapper.AgentController;
 
 import javax.swing.*;
 import java.util.Random;
@@ -35,7 +32,6 @@ public class SimAgent extends Agent {
 
         //getting roles from arguments
         Object[] args = getArguments();
-        String s;
         if (args != null) {
                 role = (String) args[0];
             }

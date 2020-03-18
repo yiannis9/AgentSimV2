@@ -192,8 +192,8 @@ public class Main extends Application {
                 Rule rule = new Rule(type,desc);
 
                 //testing
-                System.out.println(type);
-                System.out.println(desc);
+//                System.out.println(type);
+//                System.out.println(desc);
 
 
                 //now we get the choice list of the rule to iterate over
@@ -208,9 +208,9 @@ public class Main extends Application {
                     rule.choiceList.add(ch);
 
                     //testing
-                    System.out.println(chObj.get("CID"));
-                    System.out.println(chObj.get("Reward"));
-                    System.out.println(chObj.get("cDesc"));
+//                    System.out.println(chObj.get("CID"));
+//                    System.out.println(chObj.get("Reward"));
+//                    System.out.println(chObj.get("cDesc"));
 
                 }
                 System.out.println();
