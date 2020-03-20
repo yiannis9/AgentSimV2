@@ -43,35 +43,34 @@ public class SimAgent extends Agent {
         curChoice = abc.charAt(rand.nextInt(abc.length()));
 
 
-//        //sending ACL messages
-//        addBehaviour(new OneShotBehaviour() {
-//            @Override
-//            public void action() {
-//                ACLMessage msgChoice = new ACLMessage(ACLMessage.INFORM);
-//                msgChoice.setContent(String.valueOf(curChoice));
-//                msgChoice.addReceiver(new AID("agent-engine", AID.ISLOCALNAME));
-//                send(msgChoice);
-//
-//            }
-//        });
-//
-//        //receiving ACl messages
-//        addBehaviour(new CyclicBehaviour() {
-//            @Override
-//            public void action() {
-//                ACLMessage msg = receive();
-//                if (msg != null){
-//
-//                    String sender = msg.getSender().getName().split("@")[0];
-//                    logger.info("Response from " + sender + " : " + msg.getContent());
-//
-////                    JOptionPane.showMessageDialog(null,
-////                            "Message received : "+ msg.getContent());
-//                } else {
-//                    block();
-//                }
-//            }
-//        });
+        //sending ACL messages
+        addBehaviour(new OneShotBehaviour() {
+            @Override
+            public void action() {
+                ACLMessage msgChoice = new ACLMessage(ACLMessage.INFORM);
+                msgChoice.setContent(String.valueOf(curChoice));
+                msgChoice.addReceiver(new AID("agent-engine", AID.ISLOCALNAME));
+                send(msgChoice);
+            }
+        });
+
+        //receiving ACl messages
+        addBehaviour(new CyclicBehaviour() {
+            @Override
+            public void action() {
+                ACLMessage msg = receive();
+                if (msg != null){
+
+                    String sender = msg.getSender().getName().split("@")[0];
+                    logger.info("Response from " + sender + " : " + msg.getContent());
+
+//                    JOptionPane.showMessageDialog(null,
+//                            "Message received : "+ msg.getContent());
+                } else {
+                    block();
+                }
+            }
+        });
 
 
     }

@@ -13,7 +13,6 @@ import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
@@ -62,7 +61,7 @@ public class Main extends Application {
         grid.add(menuTitle, 0, 0, 2, 1);
 
         //create list to store jsonRules from jason file
-        finalRuleList = new ArrayList<>();
+        finalRuleList = new ArrayList<Rule>();
 
         //call func to load game specification rules
         gameSpecLoad(grid);
@@ -162,7 +161,6 @@ public class Main extends Application {
         //creating a scene to pass to stage
         Scene menu = new Scene(root, 1240, 720);
 
-
         //pass scene to the stage
         primaryStage.setScene(menu);
     }
@@ -205,7 +203,7 @@ public class Main extends Application {
                     Choice ch = new Choice(chObj.get("CID"),
                             chObj.get("Reward"),
                             chObj.get("cDesc"));
-                    rule.choiceList.add(ch);
+                    rule.getChoiceList().add(ch);
 
                     //testing
 //                    System.out.println(chObj.get("CID"));
@@ -220,7 +218,6 @@ public class Main extends Application {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
 
 
         //loaded game spec text

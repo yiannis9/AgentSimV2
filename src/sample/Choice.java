@@ -2,12 +2,19 @@ package sample;
 
 public class Choice {
     public String CID;
-    public String reward;
-    public String cDesc;
+    private String reward;
+    private String cDesc;
 
     public Choice (Object CID, Object reward, Object cDesc) {
 
     }
 
+    public String getcDesc() {
+        return cDesc;
+    }
+
+    public String getReward() {
+        return reward;
+    }
 
 }

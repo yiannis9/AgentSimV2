@@ -3,16 +3,16 @@
   [
     {
       "Type": "Threat",
-      "Desc": "The Tick ransomware attacks",
+      "Desc": "The 'Tick' ransomware attacks",
       "ChoiceList": [
         {
           "CID": "A",
-          "Reward": "50",
+          "Reward": "0.8",
           "cDesc": "Call IT support"
         },
         {
           "CID": "B",
-          "Reward": "10",
+          "Reward": "1.2",
           "cDesc": "Pay ransom"
         }
       ]
@@ -23,12 +23,12 @@
       "ChoiceList": [
         {
           "CID": "A",
-          "Reward": "50",
+          "Reward": "0.8",
           "cDesc": "Call IT support"
         },
         {
           "CID": "B",
-          "Reward": "10",
+          "Reward": "2",
           "cDesc": "Quit Job"
         }
       ]

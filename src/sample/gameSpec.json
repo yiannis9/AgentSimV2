@@ -3,7 +3,7 @@
   [
     {
       "Type": "Threat",
-      "Desc": "The Tick ransomware attacks",
+      "Desc": "The 'Tick' ransomware attacks",
       "ChoiceList": [
         {
           "CID": "A",

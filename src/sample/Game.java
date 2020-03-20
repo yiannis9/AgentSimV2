@@ -38,7 +38,6 @@ public class Game {
     public ArrayList<String> rolesList;
     public Logger logger;
     public jade.core.Runtime runtime;
-    private boolean gameRunning = true;
     private Integer turnsTaken=0;
     public HashMap<String, int[]> agentsGrid;
     public ContainerController container;
@@ -61,8 +60,6 @@ public class Game {
         //run initialise logger method
         initLogger();
 
-
-
         //create exit button
         genExitBtn();
 
@@ -71,7 +68,7 @@ public class Game {
         canvas.setCenter(grid);
 
         //initialise agents
-        initAgents(grid,Agents,Turns,logger);
+        initAgents(grid,Agents,Turns,logger,ruleList);
 
 //        createAgentMatrix(grid,Agents,agentsGrid);
 
@@ -189,7 +186,7 @@ public class Game {
     }
 
     //initialise all agents method and order them in grid
-    public void initAgents (GridPane grid,Integer Agents, Integer Turns, Logger logger) {
+    public void initAgents (GridPane grid,Integer Agents, Integer Turns, Logger logger, ArrayList<Rule> ruleList) {
         // init agents
         AgentController agent = null;
         VisAgent guiAgent = null;
@@ -204,10 +201,11 @@ public class Game {
             ContainerController container = runtime.createMainContainer(profile);
 
             //create Engine agent which handles all other agents
-            Object argsEngine[] = new Object[3];
+            Object argsEngine[] = new Object[4];
             argsEngine[0] = Turns;
             argsEngine[1] = logger;
             argsEngine[2] = Agents;
+            argsEngine[3] = ruleList;
             AgentController agentEngine = container.createNewAgent("agent-engine", EngineAgent.class.getName(), argsEngine);
             agentEngine.start();
 
