@@ -18,6 +18,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.lang.Runtime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -40,6 +41,7 @@ public class Game {
     private boolean gameRunning = true;
     private Integer turnsTaken=0;
     public HashMap<String, int[]> agentsGrid;
+    public ContainerController container;
 
     public Game(Integer Agents, Integer Turns, ArrayList<Rule> ruleList) throws StaleProxyException {
         //init stack node and scene
@@ -147,18 +149,18 @@ public class Game {
             @Override
             public void handle(ActionEvent e) {
                 Stage stage = (Stage) canvas.getScene().getWindow();
-
+                stage.close();
                 runtime.shutDown();
 
-                stage.close();
             }
         });
         StackPane bottomStack = new StackPane();
+        bottomStack.setPrefHeight(100.00);
 
         //Retrieving the observable list of the Stack Pane
         ObservableList<Node> list = bottomStack.getChildren();
 
-        //Adding all the nodes to the pane
+        //Adding btn to the pane
         list.addAll(exitBtn);
         canvas.setBottom(bottomStack);
 
@@ -202,9 +204,10 @@ public class Game {
             ContainerController container = runtime.createMainContainer(profile);
 
             //create Engine agent which handles all other agents
-            Object argsEngine[] = new Object[2];
+            Object argsEngine[] = new Object[3];
             argsEngine[0] = Turns;
             argsEngine[1] = logger;
+            argsEngine[2] = Agents;
             AgentController agentEngine = container.createNewAgent("agent-engine", EngineAgent.class.getName(), argsEngine);
             agentEngine.start();
 
@@ -219,8 +222,8 @@ public class Game {
                 int gridRow= 0;
                 int gridCol = 0;
                 int circleCol = 1;
-                Object args[] = new Object[1];
-                args[0] = Turns;
+                Object args[] = new Object[2];
+                args[1] = logger;
                 for (int agentcounter = 0; agentcounter < Agents; agentcounter++) {
                     //getting random roles and passing to agents
                     String role = rolesList.get(randRole.nextInt(rolesList.size()));

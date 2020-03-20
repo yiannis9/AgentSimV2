@@ -36,15 +36,7 @@ public class VisAgent extends SimAgent{
         circle.setRadius(10.0f);
         circle.setFill(Color.GREEN);
 
-        //testing logger
-        greetLog(logger);
     }
-
-    public void greetLog (Logger logger) {
-//         the following statement is used to log any messages
-        logger.info(this.name + " initialised");
-    }
-
 
 
 }

@@ -1,24 +1,126 @@
-Mar 18, 2020 6:10:59 PM sample.Game initLogger
+Mar 20, 2020 2:33:55 PM sample.Game initLogger
 INFO: LOGGER INITIALISED
-Mar 18, 2020 6:10:59 PM sample.EngineAgent setup
-INFO: Game Engine Agent initialised
-Mar 18, 2020 6:10:59 PM sample.VisAgent greetLog
-INFO: agent-0 initialised
-Mar 18, 2020 6:10:59 PM sample.VisAgent greetLog
-INFO: agent-1 initialised
-Mar 18, 2020 6:10:59 PM sample.VisAgent greetLog
-INFO: agent-2 initialised
-Mar 18, 2020 6:10:59 PM sample.VisAgent greetLog
-INFO: agent-3 initialised
-Mar 18, 2020 6:10:59 PM sample.VisAgent greetLog
-INFO: agent-4 initialised
-Mar 18, 2020 6:10:59 PM sample.VisAgent greetLog
-INFO: agent-5 initialised
-Mar 18, 2020 6:10:59 PM sample.VisAgent greetLog
-INFO: agent-6 initialised
-Mar 18, 2020 6:10:59 PM sample.VisAgent greetLog
-INFO: agent-7 initialised
-Mar 18, 2020 6:10:59 PM sample.VisAgent greetLog
-INFO: agent-8 initialised
-Mar 18, 2020 6:10:59 PM sample.VisAgent greetLog
-INFO: agent-9 initialised
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: GAME ENGINE AGENT INITIALISED.
+Mar 20, 2020 2:33:56 PM sample.SimAgent setup
+INFO: agent-9(Supervisor) has been initialised
+Mar 20, 2020 2:33:56 PM sample.SimAgent setup
+INFO: agent-6(Supervisor) has been initialised
+Mar 20, 2020 2:33:56 PM sample.SimAgent setup
+INFO: agent-5(Supervisor) has been initialised
+Mar 20, 2020 2:33:56 PM sample.SimAgent setup
+INFO: agent-4(CEO) has been initialised
+Mar 20, 2020 2:33:56 PM sample.SimAgent setup
+INFO: agent-2(CEO) has been initialised
+Mar 20, 2020 2:33:56 PM sample.SimAgent setup
+INFO: agent-0(Employee) has been initialised
+Mar 20, 2020 2:33:56 PM sample.SimAgent setup
+INFO: agent-3(CEO) has been initialised
+Mar 20, 2020 2:33:56 PM sample.SimAgent setup
+INFO: agent-1(ITadmin) has been initialised
+Mar 20, 2020 2:33:56 PM sample.SimAgent setup
+INFO: agent-7(Supervisor) has been initialised
+Mar 20, 2020 2:33:56 PM sample.SimAgent setup
+INFO: agent-8(Supervisor) has been initialised
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 0 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 1 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 2 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 3 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 4 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 5 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 6 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 7 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 8 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 9 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 10 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 11 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 12 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 13 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 14 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 15 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 16 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 17 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 18 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 19 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 20 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 21 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 22 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 23 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 24 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 25 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 26 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 27 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 28 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 29 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 30 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 31 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 32 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 33 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 34 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 35 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 36 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 37 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 38 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 39 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 40 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 41 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 42 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 43 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 44 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 45 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 46 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 47 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 48 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 49 ended.
+Mar 20, 2020 2:33:56 PM sample.EngineAgent setup
+INFO: Turn: 50 ended.
