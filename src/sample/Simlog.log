@@ -1,588 +1,662 @@
-Mar 20, 2020 5:48:22 PM sample.Game initLogger
+Mar 21, 2020 9:05:51 PM sample.Game initLogger
 INFO: LOGGER INITIALISED
-Mar 20, 2020 5:48:23 PM sample.EngineAgent setup
+Mar 21, 2020 9:05:52 PM sample.EngineAgent setup
 INFO: GAME ENGINE AGENT INITIALISED. Agents:10 /Turns:10
-Mar 20, 2020 5:48:23 PM sample.SimAgent setup
-INFO: agent-3(Employee) has been initialised
-Mar 20, 2020 5:48:23 PM sample.SimAgent setup
-INFO: agent-0(Supervisor) has been initialised
-Mar 20, 2020 5:48:23 PM sample.SimAgent setup
+Mar 21, 2020 9:05:52 PM sample.SimAgent setup
 INFO: agent-1(Employee) has been initialised
-Mar 20, 2020 5:48:23 PM sample.SimAgent setup
+Mar 21, 2020 9:05:52 PM sample.SimAgent setup
+INFO: agent-0(Employee) has been initialised
+Mar 21, 2020 9:05:52 PM sample.SimAgent setup
 INFO: agent-4(Employee) has been initialised
-Mar 20, 2020 5:48:23 PM sample.SimAgent setup
-INFO: agent-5(ITadmin) has been initialised
-Mar 20, 2020 5:48:23 PM sample.SimAgent setup
-INFO: agent-7(ITadmin) has been initialised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: Turn: 0 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: Turn: 1 ended.
-Mar 20, 2020 5:48:23 PM sample.SimAgent setup
-INFO: agent-6(ITadmin) has been initialised
-Mar 20, 2020 5:48:23 PM sample.SimAgent setup
+Mar 21, 2020 9:05:52 PM sample.SimAgent setup
 INFO: agent-2(Employee) has been initialised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.SimAgent setup
+INFO: agent-3(Employee) has been initialised
+Mar 21, 2020 9:05:52 PM sample.SimAgent setup
+INFO: agent-5(Employee) has been initialised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.SimAgent setup
+INFO: agent-6(Employee) has been initialised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.SimAgent setup
+INFO: agent-8(Supervisor) has been initialised
+Mar 21, 2020 9:05:52 PM sample.SimAgent setup
+INFO: agent-7(Supervisor) has been initialised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+INFO: Turn: 0 ended.
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+INFO: Turn: 1 ended.
+Mar 21, 2020 9:05:52 PM sample.SimAgent setup
+INFO: agent-9(Supervisor) has been initialised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 2 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 3 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 4 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 5 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 6 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.SimAgent setup
-INFO: agent-9(ITadmin) has been initialised
-Mar 20, 2020 5:48:23 PM sample.SimAgent setup
-INFO: agent-8(ITadmin) has been initialised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 7 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 8 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 9 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 10 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 11 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 12 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 13 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 14 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 15 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 16 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 17 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 18 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 19 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 20 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 21 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 22 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 23 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 24 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 25 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 26 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 27 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 28 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 29 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 30 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 31 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 32 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 33 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 34 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 35 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 36 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 37 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 38 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 39 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 40 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 41 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 42 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 43 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 44 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-7has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-3has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 45 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 46 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-0 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 47 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-6has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-1has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-4has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 48 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-8has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-9has been compromised due to the following threat: Your account has been compromised
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 49 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-5has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-0has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
-INFO: agent-2has been compromised due to the following threat: The 'Tick' ransomware attacks
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$1 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-3 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-5 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-6 has been compromised due to the following threat: The 'Tick' ransomware attacks
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
+WARNING: agent-8 has been compromised due to the following threat: Your account has been compromised
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$1 action
 INFO: Turn: 50 ended.
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$2 action
-INFO: Response from agent-5 : B
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$2 action
-INFO: Response from agent-3 : A
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$2 action
-INFO: Response from agent-0 : B
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$2 action
-INFO: Response from agent-6 : A
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$2 action
-INFO: Response from agent-2 : B
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$2 action
-INFO: Response from agent-4 : A
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$2 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$2 action
 INFO: Response from agent-1 : B
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$2 action
-INFO: Response from agent-7 : B
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$2 action
-INFO: Response from agent-8 : A
-Mar 20, 2020 5:48:23 PM sample.EngineAgent$2 action
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$2 action
+INFO: Response from agent-2 : A
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$2 action
+INFO: Response from agent-3 : A
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$2 action
+INFO: Response from agent-0 : B
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$2 action
+INFO: Response from agent-6 : A
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$2 action
+INFO: Response from agent-5 : A
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$2 action
+INFO: Response from agent-7 : A
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$2 action
+INFO: Response from agent-4 : B
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$2 action
+INFO: Response from agent-8 : B
+Mar 21, 2020 9:05:52 PM sample.EngineAgent$2 action
 INFO: Response from agent-9 : A

@@ -16,12 +16,11 @@ public class EngineAgent extends Agent {
     protected static int cidCnt = 0;
     String cidBase ;
     //
-    private Random rand = new Random();
     private String abc = "AB";
     private Logger logger=null;
     ACLMessage msg;
     public ArrayList<Rule> ruleList;
-    private ArrayList<AgentPointCalculator> pointsAndRates;
+    private ArrayList<AgentPointCalculator> pointsAndRates = new ArrayList<AgentPointCalculator>();
     private Integer Agents=0;
 
     protected void setup() {
@@ -44,26 +43,38 @@ public class EngineAgent extends Agent {
             logger.info("GAME ENGINE AGENT INITIALISED. Agents:"+Agents+" /Turns:"+Turns);
         }
 
-        //initialise list with points and rates
-        genPointsAndRateList(Agents);
 
+        ArrayList<AgentPointCalculator> pointsAndRates =genPointsAndRateList(Agents);
         ArrayList<Rule> finalRuleList = ruleList;
         addBehaviour(new OneShotBehaviour() {
             @Override
             public void action() {
-                for(int turnsTaken=0;turnsTaken<=50;turnsTaken++){
+                //initialise list with points and rates
 
-                    //every turn we roll for a random number of threats exposed to
-                    Integer ThreatsThisTurn = rand.nextInt(Agents);
-                    //distribute threats to random agents according to random number of threats per turn
-                    for(int threat=1;threat<=ThreatsThisTurn;threat++){
-                        Random rnd = new Random();
+
+                for(int turnsTaken=0;turnsTaken<=50;turnsTaken++){
+                    Random rnd = new Random();
+
+                    //fill list of infected agents each turn
+                    ArrayList<String> infectedAgents = new ArrayList<String>();
+                    for (AgentPointCalculator a:pointsAndRates){
+                        //perform threat check
+                        Double threatCheck = rnd.nextDouble();
+                        if (a.getThreatRate()<threatCheck){
+                            infectedAgents.add(a.getName());
+                        }
+                    }
+
+                    //distribute threats to infected agents according to random number of threats per turn
+                    for(String infectedAgent:infectedAgents){
+
+                        //
+                        //ADD BEHAVIOUR FOR SENDING TO AGENTS HERE
+                        //
                         //get random threat from ruleList
                         Integer randomThreatIndex = rnd.nextInt(finalRuleList.size());
-                        Integer compromisedAgentNo = rnd.nextInt(Agents);
-                        String compromisedAgentName = "agent-"+compromisedAgentNo;
                         Rule selectedThreat = finalRuleList.get(randomThreatIndex);
-                        logger.info(compromisedAgentName+" has been compromised due to the following threat: "+ selectedThreat.getDesc());
+                        logger.warning(infectedAgent+" has been compromised due to the following threat: "+ selectedThreat.getDesc());
 
                     }
 
@@ -119,12 +130,15 @@ public class EngineAgent extends Agent {
     }
 
     //generate list with points and threat rate
-    public void genPointsAndRateList (Integer Agents){
-        pointsAndRates = new ArrayList<AgentPointCalculator>();
-        for(int agent=0;agent<Agents;agent++){
+    public ArrayList<AgentPointCalculator> genPointsAndRateList (Integer Agents){
+        ArrayList<AgentPointCalculator> pointsAndRates = this.pointsAndRates;
+        for(int agent = 0; agent<Agents; agent++){
             String agName = "agent-"+agent;
-            pointsAndRates.add(new AgentPointCalculator(500,0.5,agName));
+            Integer points = 500;
+            Double rate = 0.5;
+            pointsAndRates.add(new AgentPointCalculator(points,rate,agName));
         }
+        return pointsAndRates;
     }
 
 }
