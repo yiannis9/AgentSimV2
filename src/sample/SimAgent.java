@@ -10,6 +10,7 @@ import jade.domain.FIPAAgentManagement.SearchConstraints;
 import jade.lang.acl.ACLMessage;
 
 import javax.swing.*;
+import java.util.ArrayList;
 import java.util.Random;
 import java.util.logging.Logger;
 
@@ -43,17 +44,6 @@ public class SimAgent extends Agent {
         curChoice = abc.charAt(rand.nextInt(abc.length()));
 
 
-        //sending ACL messages
-        addBehaviour(new OneShotBehaviour() {
-            @Override
-            public void action() {
-                ACLMessage msgChoice = new ACLMessage(ACLMessage.INFORM);
-                msgChoice.setContent(String.valueOf(curChoice));
-                msgChoice.addReceiver(new AID("agent-engine", AID.ISLOCALNAME));
-                send(msgChoice);
-            }
-        });
-
         //receiving ACl messages
         addBehaviour(new CyclicBehaviour() {
             @Override
@@ -62,7 +52,7 @@ public class SimAgent extends Agent {
                 if (msg != null){
 
                     String sender = msg.getSender().getName().split("@")[0];
-                    logger.info("Response from " + sender + " : " + msg.getContent());
+                    String choices = msg.getContent();
 
 //                    JOptionPane.showMessageDialog(null,
 //                            "Message received : "+ msg.getContent());
@@ -71,6 +61,18 @@ public class SimAgent extends Agent {
                 }
             }
         });
+
+//        //sending ACL messages
+//        addBehaviour(new OneShotBehaviour() {
+//            @Override
+//            public void action() {
+//                ACLMessage msgChoice = new ACLMessage(ACLMessage.INFORM);
+//                msgChoice.setContent(String.valueOf(curChoice));
+//                msgChoice.addReceiver(new AID("agent-engine", AID.ISLOCALNAME));
+//                send(msgChoice);
+//            }
+//        });
+
 
 
     }

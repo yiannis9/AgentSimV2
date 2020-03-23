@@ -200,19 +200,36 @@ public class Main extends Application {
                     //need to parse it as a new json object at index x
                     JSONObject chObj =  (JSONObject) choices.get(x);
                     //now we add
-                    Choice ch = new Choice(chObj.get("CID"),
-                            chObj.get("Reward"),
-                            chObj.get("cDesc"));
+                    String cid= (String) chObj.get("CID");
+                    String reward= (String) chObj.get("Reward");
+                    String threatChange= (String) chObj.get("ThreatChange");
+                    String cDesc= (String) chObj.get("cDesc");
+                    Choice ch = new Choice(cid,reward,threatChange,cDesc);
                     rule.getChoiceList().add(ch);
 
                     //testing
-//                    System.out.println(chObj.get("CID"));
-//                    System.out.println(chObj.get("Reward"));
-//                    System.out.println(chObj.get("cDesc"));
+//                    System.out.println(cid);
+//                    System.out.println(reward);
+//                    System.out.println(threatChange);
+//                    System.out.println(cDesc);
 
                 }
                 System.out.println();
                 finalRuleList.add(rule);
+
+                //testing
+//                for (Rule r: finalRuleList){
+//                    System.out.println(r.getDesc());
+//                    System.out.println(r.getType());
+//                    System.out.println(r.getChoiceList().get(0).getReward());
+//                    for (Choice cho: r.getChoiceList()){
+//                        System.out.println(cho.getCID());
+//                        System.out.println(cho.getcDesc());
+//                        System.out.println(cho.getReward());
+//                        System.out.println(cho.getThreatChange());
+//                    }
+//
+//                }
 
             }
         } catch (Exception e) {

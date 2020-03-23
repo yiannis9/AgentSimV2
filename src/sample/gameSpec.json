@@ -3,16 +3,18 @@
   [
     {
       "Type": "Threat",
-      "Desc": "The 'Tick' ransomware attacks",
+      "Desc": "The 'Tick' ransomware attacks! All your files have been encrypted",
       "ChoiceList": [
         {
           "CID": "A",
-          "Reward": "0.8",
+          "Reward": "100",
+          "ThreatChange": "0.8",
           "cDesc": "Call IT support"
         },
         {
           "CID": "B",
-          "Reward": "1.2",
+          "Reward": "200",
+          "ThreatChange": "1.2",
           "cDesc": "Pay ransom"
         }
       ]
@@ -23,13 +25,15 @@
       "ChoiceList": [
         {
           "CID": "A",
-          "Reward": "0.8",
-          "cDesc": "Call IT support"
+          "Reward": "100",
+          "ThreatChange": "1.1",
+          "cDesc": "Call IT support for a new account"
         },
         {
           "CID": "B",
-          "Reward": "2",
-          "cDesc": "Quit Job"
+          "Reward": "200",
+          "ThreatChange": "0.8",
+          "cDesc": "Reset Password"
         }
       ]
     }

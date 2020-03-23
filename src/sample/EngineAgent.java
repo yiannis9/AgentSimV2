@@ -1,10 +1,15 @@
 package sample;
 
+import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.behaviours.OneShotBehaviour;
 import jade.lang.acl.ACLMessage;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
+import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.logging.Logger;
@@ -18,17 +23,17 @@ public class EngineAgent extends Agent {
     //
     private String abc = "AB";
     private Logger logger=null;
-    ACLMessage msg;
-    public ArrayList<Rule> ruleList;
+    public ArrayList<Rule> ruleList = new ArrayList<Rule>();
     private ArrayList<AgentPointCalculator> pointsAndRates = new ArrayList<AgentPointCalculator>();
     private Integer Agents=0;
+    public ArrayList<Rule> finalRuleList;
 
     protected void setup() {
         //setting up important variables which will be used often
         char curChoice;
         String curTarget;
         Integer Turns=0;
-        ArrayList<Rule> ruleList = null;
+
 
         String agName = getAID().getName().split("@")[0];
 
@@ -44,15 +49,29 @@ public class EngineAgent extends Agent {
         }
 
 
+        //testing
+//        for (Rule r: ruleList){
+//            System.out.println(r.getDesc());
+//            System.out.println(r.getType());
+//            for (Choice ch: r.getChoiceList()){
+//                System.out.println(ch.getCID());
+//                System.out.println(ch.getcDesc());
+//                System.out.println(ch.getReward());
+//                System.out.println(ch.getThreatChange());
+//            }
+//
+//        }
+
+        //initialise list with points and rates
         ArrayList<AgentPointCalculator> pointsAndRates =genPointsAndRateList(Agents);
         ArrayList<Rule> finalRuleList = ruleList;
+        Integer finalTurns = Turns;
         addBehaviour(new OneShotBehaviour() {
             @Override
             public void action() {
-                //initialise list with points and rates
 
-
-                for(int turnsTaken=0;turnsTaken<=50;turnsTaken++){
+                //turns loop
+                for(int turnsTaken = 0; turnsTaken<= finalTurns; turnsTaken++){
                     Random rnd = new Random();
 
                     //fill list of infected agents each turn
@@ -68,20 +87,49 @@ public class EngineAgent extends Agent {
                     //distribute threats to infected agents according to random number of threats per turn
                     for(String infectedAgent:infectedAgents){
 
-                        //
-                        //ADD BEHAVIOUR FOR SENDING TO AGENTS HERE
-                        //
                         //get random threat from ruleList
                         Integer randomThreatIndex = rnd.nextInt(finalRuleList.size());
                         Rule selectedThreat = finalRuleList.get(randomThreatIndex);
+                        //report compromised agents in log
                         logger.warning(infectedAgent+" has been compromised due to the following threat: "+ selectedThreat.getDesc());
 
+                        //cast choices in a single string to send as ACL
+                        String encodedChoices = "";
+                        for (Choice c: selectedThreat.getChoiceList()){
+                            encodedChoices += c.getCID()+"//"+c.getReward()+"//"+c.getThreatChange()+"//"+c.getcDesc()+"//";
+                        }
+                        System.out.println(encodedChoices);
+                        //sending ACL messages
+                        String finalEncodedChoices = encodedChoices;
+                        addBehaviour(new OneShotBehaviour() {
+                            @Override
+                            public void action() {
+                                ACLMessage msgChoice = new ACLMessage(ACLMessage.INFORM);
+
+                                msgChoice.setContent(finalEncodedChoices);
+                                msgChoice.addReceiver(new AID(infectedAgent, AID.ISLOCALNAME));
+                                send(msgChoice);
+
+                            }
+                        });
+
+                    }
+                    for (AgentPointCalculator ag: pointsAndRates){
+                        if (infectedAgents.contains(ag.getName())){
+                            ag.setPoints(ag.getPoints()+300);
+                        }
                     }
 
                     logger.info("Turn: "+turnsTaken+" ended.");
                 }
+                for (AgentPointCalculator ag: pointsAndRates){
+                    System.out.println(ag.getName()+"// "+ ag.getPoints());
+                }
             }
+
+
         });
+
 
 
 
