@@ -247,6 +247,7 @@ public class Game {
                     gridRow++;
 
                 }
+
                 // --TESTING-- testing printing name of all agents.
 //                initAgentLister(container);
 

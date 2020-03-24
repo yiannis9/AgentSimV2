@@ -242,5 +242,58 @@ public class Main extends Application {
         gameLoadedTxt.setFont(Font.font("Tahoma", FontWeight.NORMAL, 10));
         grid.add(gameLoadedTxt,0, 1);
     }
+
+    public void groupsLoad (GridPane grid){
+
+        JSONParser parser = new JSONParser();
+        try {
+            Object obj = parser.parse(new FileReader("src/sample/Groups.json"));
+
+            // A JSON object. Key value pairs are unordered. JSONObject supports java.util.Map interface.
+            JSONObject jsonObject = (JSONObject) obj;
+
+            // A JSON array. JSONObject supports return 0;java.util.List interface.
+            JSONArray jsonGroups = (JSONArray) jsonObject.get("Department");
+
+            // An iterator over a collection. Iterator takes the place of Enumeration in the Java Collections Framework.
+            for (int i = 0; i < jsonGroups.size(); i++) {
+
+                // get json object at index i
+                JSONObject jsonGroup = (JSONObject) jsonGroups.get(i);
+                //extract type and description from json object
+                String type = (String) jsonGroup.get("Type");
+                String desc = (String) jsonGroup.get("Desc");
+                //create new rule and parse info
+                Rule rule = new Rule(type,desc);
+
+
+                //now we get the choice list of the rule to iterate over
+                JSONArray choices = (JSONArray) jsonGroup.get("ChoiceList");
+                for (int x = 0; x < choices.size(); x++) {
+                    //need to parse it as a new json object at index x
+                    JSONObject chObj =  (JSONObject) choices.get(x);
+                    //now we add
+                    String cid= (String) chObj.get("CID");
+                    String reward= (String) chObj.get("Reward");
+                    String threatChange= (String) chObj.get("ThreatChange");
+                    String cDesc= (String) chObj.get("cDesc");
+                    Choice ch = new Choice(cid,reward,threatChange,cDesc);
+                    rule.getChoiceList().add(ch);
+
+            }
+                System.out.println();
+                finalRuleList.add(rule);
+
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        //loaded game spec text
+        Text gameLoadedTxt = new Text("Group Specification Loaded");
+        gameLoadedTxt.setFont(Font.font("Tahoma", FontWeight.NORMAL, 10));
+        grid.add(gameLoadedTxt,0, 2);
+    }
 }
 

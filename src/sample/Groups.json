@@ -1,0 +1,129 @@
+{
+  "Department":
+  [
+    {
+      "Name": "Finance",
+      "RoleList":
+      [
+        {
+          "Position": "General Accountant",
+          "ActionDegree": 2,
+          "Limit": 0
+        },
+        {
+          "Position": "Financial Analyst",
+          "ActionDegree": 3,
+          "Limit": 2
+        },
+        {
+        "Position": "Accounting Clerk",
+        "ActionDegree": 2,
+          "Limit": 0
+        },
+        {
+          "Position": "Controller",
+          "ActionDegree": 2,
+          "Limit": 0
+        },
+        {
+          "Position": "General Accountant",
+          "ActionDegree": 2,
+          "Limit": 0
+        }
+      ]
+    },
+    {
+      "Name": "IT",
+      "RoleList":
+      [
+        {
+          "Position": "IT Administrator",
+          "ActionDegree": 3,
+          "Limit": 0
+        },
+        {
+          "Position": "Network Administrator",
+          "ActionDegree": 3,
+          "Limit": 2
+        },
+        {
+          "Position": "CTO",
+          "ActionDegree": 3,
+          "Limit": 1
+        },
+        {
+          "Position": "Help Desk Support",
+          "ActionDegree": 1,
+          "Limit": 0
+        },
+        {
+          "Position": "Hardware Technician",
+          "ActionDegree": 2,
+          "Limit": 0
+        }
+      ]
+    },
+    {
+      "Name": "Legal",
+      "RoleList":
+      [
+        {
+          "Position": "Legal Advisor",
+          "ActionDegree": 2,
+          "Limit": 0
+        },
+        {
+          "Position": "Chartered Legal Executive",
+          "ActionDegree": 2,
+          "Limit": 3
+        }
+      ]
+    },
+    {
+      "Name": "Human Resources",
+      "RoleList":
+      [
+        {
+          "Position": "HRO Manager",
+          "ActionDegree": 3,
+          "Limit": 1
+        },
+        {
+          "Position": "HR Assistant",
+          "ActionDegree": 2,
+          "Limit": 0
+        }
+      ]
+    },
+    {
+      "Name": "Multimedia",
+      "RoleList":
+      [
+        {
+          "Position": "PR/Office Manager",
+          "ActionDegree": 2,
+          "Limit": 1
+        },
+        {
+          "Position": "Multimedia Developer",
+          "ActionDegree": 2,
+          "Limit": 0
+        },
+        {
+          "Position": "Social Media Manager",
+          "ActionDegree": 2,
+          "Limit": 0
+        }
+      ]
+    }
+    ],
+  "Attributes":
+  [
+    "Profit Maximiser",
+    "Cautious",
+    "Randomiser"
+  ]
+}
+
+
+

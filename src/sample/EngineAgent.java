@@ -5,11 +5,7 @@ import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.behaviours.OneShotBehaviour;
 import jade.lang.acl.ACLMessage;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 
-import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.logging.Logger;
@@ -80,7 +76,7 @@ public class EngineAgent extends Agent {
                         //perform threat check
                         Double threatCheck = rnd.nextDouble();
                         if (a.getThreatRate()<threatCheck){
-                            infectedAgents.add(a.getName());
+                            infectedAgents.add(a.getName ());
                         }
                     }
 
@@ -96,9 +92,14 @@ public class EngineAgent extends Agent {
                         //cast choices in a single string to send as ACL
                         String encodedChoices = "";
                         for (Choice c: selectedThreat.getChoiceList()){
-                            encodedChoices += c.getCID()+"//"+c.getReward()+"//"+c.getThreatChange()+"//"+c.getcDesc()+"//";
+                            encodedChoices += c.getCID()+":"+c.getReward()+":"+c.getThreatChange()+":"+c.getcDesc()+"||";
                         }
+                        //gimmick to remove last 2 characters coz it makes it easier later
+                        encodedChoices = encodedChoices.substring(0,encodedChoices.length()-2);
+
+                        //testing format of send
                         System.out.println(encodedChoices);
+
                         //sending ACL messages
                         String finalEncodedChoices = encodedChoices;
                         addBehaviour(new OneShotBehaviour() {

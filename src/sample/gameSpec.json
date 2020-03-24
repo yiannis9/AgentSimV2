@@ -3,37 +3,73 @@
   [
     {
       "Type": "Threat",
-      "Desc": "The 'Tick' ransomware attacks! All your files have been encrypted",
+      "Desc": "The 'Tick' ransomware attacks! All your files have been encrypted.",
       "ChoiceList": [
         {
           "CID": "A",
           "Reward": "100",
           "ThreatChange": "0.8",
-          "cDesc": "Call IT support"
+          "cDesc": "Call IT support."
         },
         {
           "CID": "B",
           "Reward": "200",
           "ThreatChange": "1.2",
-          "cDesc": "Pay ransom"
+          "cDesc": "Pay ransom."
         }
       ]
     },
     {
       "Type": "Threat",
-      "Desc": "Your account has been compromised",
+      "Desc": "Your account has been compromised.",
       "ChoiceList": [
         {
           "CID": "A",
           "Reward": "100",
           "ThreatChange": "1.1",
-          "cDesc": "Call IT support for a new account"
+          "cDesc": "Call IT support for a new account."
         },
         {
           "CID": "B",
           "Reward": "200",
           "ThreatChange": "0.8",
-          "cDesc": "Reset Password"
+          "cDesc": "Reset Password."
+        }
+      ]
+    },
+    {
+      "Type": "Policy",
+      "Desc": "Passwords must be changed if they have been used for a large amount of time.",
+      "ChoiceList": [
+        {
+          "CID": "A",
+          "Reward": "200",
+          "ThreatChange": "1.2",
+          "cDesc": "Disregard the policy and continue your work."
+        },
+        {
+          "CID": "B",
+          "Reward": "100",
+          "ThreatChange": "0.7",
+          "cDesc": "Reset Password now."
+        }
+      ]
+    },
+    {
+      "Type": "Policy",
+      "Desc": "Should only use trusted networks to connect to from any device.",
+      "ChoiceList": [
+        {
+          "CID": "A",
+          "Reward": "50",
+          "ThreatChange": "0.9",
+          "cDesc": "Use trusted work network even though signal is bad."
+        },
+        {
+          "CID": "B",
+          "Reward": "150",
+          "ThreatChange": "1.4",
+          "cDesc": "Signal is bad. Connect to 'Starbuckz' wifi anyway."
         }
       ]
     }

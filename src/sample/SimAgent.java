@@ -10,7 +10,9 @@ import jade.domain.FIPAAgentManagement.SearchConstraints;
 import jade.lang.acl.ACLMessage;
 
 import javax.swing.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.logging.Logger;
 
@@ -52,8 +54,17 @@ public class SimAgent extends Agent {
                 if (msg != null){
 
                     String sender = msg.getSender().getName().split("@")[0];
-                    String choices = msg.getContent();
-
+                    String concatenatedChoices = msg.getContent();
+                    String[] stripedChoices = concatenatedChoices.split("[||]");
+                    ArrayList<Choice> currentChoices = new ArrayList<Choice>();
+                    for (String s: stripedChoices){
+                        if (!s.isEmpty()){
+                            //stripped choice broken into its fields
+                            String[] sc = s.split("[:]");
+                            Choice choice = new Choice(sc[0],sc[1],sc[2],sc[3]);
+                            currentChoices.add(choice);
+                        }
+                    }
 //                    JOptionPane.showMessageDialog(null,
 //                            "Message received : "+ msg.getContent());
                 } else {
