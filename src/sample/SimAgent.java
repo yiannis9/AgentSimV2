@@ -2,32 +2,20 @@ package sample;
 
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
-import jade.core.AID;
 import jade.core.behaviours.OneShotBehaviour;
-import jade.domain.AMSService;
-import jade.domain.FIPAAgentManagement.AMSAgentDescription;
-import jade.domain.FIPAAgentManagement.SearchConstraints;
 import jade.lang.acl.ACLMessage;
 
-import javax.swing.*;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Random;
 import java.util.logging.Logger;
 
-
 public class SimAgent extends Agent {
 
-    public char curChoice;
-    public String curPartner;
-    public String state = "active";
     public String role;
     private String abc = "AB";
     private Random rand = new Random();
     private Logger logger = null;
-    private double threatRate = 0.5;
-    private double points= 500;
+    private String attribute = "randomiser";
+    private ACLMessage msg;
 
     protected void setup() {
         //cleaning name of agent
@@ -42,47 +30,58 @@ public class SimAgent extends Agent {
             logger.info(agName + "("+ role + ") has been initialised");
             }
 
-        //this is a gimmick to get random choices A or B
-        curChoice = abc.charAt(rand.nextInt(abc.length()));
-
-
+        Rule receivedRule = null;
         //receiving ACl messages
         addBehaviour(new CyclicBehaviour() {
             @Override
             public void action() {
                 ACLMessage msg = receive();
-                if (msg != null){
+                if (msg != null) {
 
                     String sender = msg.getSender().getName().split("@")[0];
-                    String concatenatedChoices = msg.getContent();
+                    // get message content
+                    String concatenatedRule = msg.getContent();
+                    // strip the string into an array separating Desc,Type,ChoiceList
+                    String[] stripedRule = concatenatedRule.split("[/]");
+                    // Create new rule with the striped strings
+                    final Rule receivedRule = new Rule(stripedRule[1], stripedRule[0]);
+                    // now we do the same with choices
+                    String concatenatedChoices = stripedRule[2];
+                    // iterate over array and add choices into new rule
                     String[] stripedChoices = concatenatedChoices.split("[||]");
-                    ArrayList<Choice> currentChoices = new ArrayList<Choice>();
-                    for (String s: stripedChoices){
-                        if (!s.isEmpty()){
+                    for (String s : stripedChoices) {
+                        if (!s.isEmpty()) {
                             //stripped choice broken into its fields
                             String[] sc = s.split("[:]");
-                            Choice choice = new Choice(sc[0],sc[1],sc[2],sc[3]);
-                            currentChoices.add(choice);
+                            //breaking it into ID,Reward,threatChange,Desc
+                            Choice choice = new Choice(sc[0], sc[1], sc[2], sc[3]);
+                            receivedRule.getChoiceList().add(choice);
                         }
                     }
-//                    JOptionPane.showMessageDialog(null,
-//                            "Message received : "+ msg.getContent());
+                    //HERE WE ADD INTELLIGENT DECISION MECHANISMS OF AGENTS
+                    //DEPENDING ON ATTRIBUTE
+
+                    //sending ACL messages
+                    addBehaviour(new OneShotBehaviour() {
+                        @Override
+                        public void action() {
+
+                            ACLMessage msgChoice = msg.createReply();
+                            String choicesString = "ABCD";
+                            //size of choice list of selected rule. This enables us to have rules of varying
+                            //no of choices without getting null pointers or out of index entries. I HOPE
+                            int chSize = receivedRule.getChoiceList().size();
+                            String curChoice = String.valueOf(choicesString.charAt(rand.nextInt(chSize)));
+                            msgChoice.setContent(receivedRule.getDesc()+":"+ String.valueOf(curChoice));
+                            send(msgChoice);
+                        }
+                    });
+
                 } else {
                     block();
                 }
             }
         });
-
-//        //sending ACL messages
-//        addBehaviour(new OneShotBehaviour() {
-//            @Override
-//            public void action() {
-//                ACLMessage msgChoice = new ACLMessage(ACLMessage.INFORM);
-//                msgChoice.setContent(String.valueOf(curChoice));
-//                msgChoice.addReceiver(new AID("agent-engine", AID.ISLOCALNAME));
-//                send(msgChoice);
-//            }
-//        });
 
 
 

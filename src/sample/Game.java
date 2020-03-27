@@ -38,7 +38,7 @@ public class Game {
     public ArrayList<String> rolesList;
     public Logger logger;
     public jade.core.Runtime runtime;
-    private Integer turnsTaken=0;
+    private Integer turnsTaken=1;
     public HashMap<String, int[]> agentsGrid;
     public ContainerController container;
 
@@ -70,61 +70,7 @@ public class Game {
         //initialise agents
         initAgents(grid,Agents,Turns,logger,ruleList);
 
-//        createAgentMatrix(grid,Agents,agentsGrid);
-
-
     }
-
-    //tester method to check placement of agents on grid
-    public void createAgentMatrix (GridPane grid,Integer Agents,HashMap<String,int[]> agentsGrid) {
-        //get every +2 from list
-        try {
-            agentsGrid = new HashMap<String, int[]>();
-            ObservableList<Node> list = grid.getChildren();
-            //loop over list
-//            Integer agCCoord = 0;
-            Integer agTCoord = 0;
-            int[] arr = {0,1};
-            String agentName = null;
-            for (int i = 1; i < (list.size()/2); i++) {
-                //check if Text or Circle and if text get the name of agent belonging to
-//                if (obj.getClass().getName() == "javafx.scene.text.Text") {
-//
-//                    Text agText = (Text) obj;
-//                    agentName = agText.getText();
-//                    agTCoord = list.indexOf(obj);
-//                    System.out.println(agentName + " at index: " + agTCoord);
-//                    arr[0] = agTCoord;
-//                } else {
-//                    Circle agCircle = (Circle) obj;
-//                    agCCoord = list.indexOf(obj);
-//                    System.out.println("Circle at index " + agCCoord);
-//                    arr[1] = agCCoord;
-//                }
-
-                //adding keys: Name, Text and Circle Coordinates
-
-                agentName = "agent-" + agTCoord;
-                agentsGrid.put(agentName, arr);
-                System.out.println(Arrays.toString(agentsGrid.get(agentName)));
-                arr[0] += 2;
-                arr[1] += 2;
-                agTCoord += 1;
-
-            }
-            //so the coordinates go 0,1..2,3...4,5...cant waste anymore time on this...
-
-
-
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-
-
-
-    }
-
 
     //method to initialise menu bar
     public void createMenuBar(Integer Turns, Integer Agents) {
@@ -209,60 +155,31 @@ public class Game {
             AgentController agentEngine = container.createNewAgent("agent-engine", EngineAgent.class.getName(), argsEngine);
             agentEngine.start();
 
-            //managing roles
-            rolesList = new ArrayList<String>();
-            rolesList.add("Supervisor");
-            rolesList.add( "CEO");
-            rolesList.add("Employee");
-            rolesList.add("ITadmin");
-            Random randRole = new Random();
-            try {
-                int gridRow= 0;
+                int gridRow = 0;
                 int gridCol = 0;
                 int circleCol = 1;
-                Object args[] = new Object[2];
-                args[1] = logger;
                 for (int agentcounter = 0; agentcounter < Agents; agentcounter++) {
-                    //getting random roles and passing to agents
-                    String role = rolesList.get(randRole.nextInt(rolesList.size()));
-                    args[0] = role;
-                    agent = container.createNewAgent("agent-" + agentcounter,
-                            SimAgent.class.getName(), args);
-
-                    // Fire up the agent
-                    agent.start();
-
                     //class wrapping abstraction
                     //VisAgent uses SimAgent which is the actual agent class connected to jade
                     //VisAgent is only responsible for the gui visuals
-                    guiAgent = new VisAgent(agent, logger);
-                    int inc=2;
-                    if (agentcounter%10==0){
-                        gridCol+= 2;
-                        circleCol+=2;
-                        gridRow=0;
+                    guiAgent = new VisAgent("agent-" + agentcounter);
+                    int inc = 2;
+                    if (agentcounter % 10 == 0) {
+                        gridCol += 2;
+                        circleCol += 2;
+                        gridRow = 0;
                     }
                     grid.add(guiAgent.text, gridCol, gridRow);
                     grid.add(guiAgent.circle, circleCol, gridRow);
                     gridRow++;
-
                 }
-
-                // --TESTING-- testing printing name of all agents.
-//                initAgentLister(container);
 
             } catch (StaleProxyException e) {
                 e.printStackTrace();
             }
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
         }
 
-    }
-
-    //tester function. creates agentLister which prints all agents in the container.
+        //tester function. creates agentLister which prints all agents in the container.
     public void initAgentLister (ContainerController container) throws StaleProxyException {
         Object reference = new Object();
         Object args[] = new Object[1];

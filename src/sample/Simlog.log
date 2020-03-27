@@ -1,152 +1,113 @@
-Mar 24, 2020 8:44:11 PM sample.Game initLogger
+Mar 27, 2020 4:58:23 PM sample.Game initLogger
 INFO: LOGGER INITIALISED
-Mar 24, 2020 8:44:12 PM sample.EngineAgent setup
-INFO: GAME ENGINE AGENT INITIALISED. Agents:10 /Turns:10
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-1 has been compromised due to the following threat: Passwords must be changed if they have been used for a large amount of time.
-Mar 24, 2020 8:44:12 PM sample.SimAgent setup
-INFO: agent-0(Employee) has been initialised
-Mar 24, 2020 8:44:12 PM sample.SimAgent setup
+Mar 27, 2020 4:58:24 PM sample.EngineAgent setup
+INFO: GAME ENGINE AGENT INITIALISED. Agents:2 /Turns:10
+Mar 27, 2020 4:58:24 PM sample.SimAgent setup
 INFO: agent-1(CEO) has been initialised
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-3 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-6 has been compromised due to the following threat: Your account has been compromised.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-INFO: Turn: 0 ended.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-1 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-6 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-7 has been compromised due to the following threat: Your account has been compromised.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-8 has been compromised due to the following threat: Passwords must be changed if they have been used for a large amount of time.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.SimAgent setup
-INFO: agent-2(ITadmin) has been initialised
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-INFO: Turn: 1 ended.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-1 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.SimAgent setup
-INFO: agent-4(Supervisor) has been initialised
-Mar 24, 2020 8:44:12 PM sample.SimAgent setup
-INFO: agent-3(Supervisor) has been initialised
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-5 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-INFO: Turn: 2 ended.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-4 has been compromised due to the following threat: Passwords must be changed if they have been used for a large amount of time.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-9 has been compromised due to the following threat: Passwords must be changed if they have been used for a large amount of time.
-Mar 24, 2020 8:44:12 PM sample.SimAgent setup
-INFO: agent-5(CEO) has been initialised
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-INFO: Turn: 3 ended.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-5 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-6 has been compromised due to the following threat: Passwords must be changed if they have been used for a large amount of time.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-8 has been compromised due to the following threat: Your account has been compromised.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-9 has been compromised due to the following threat: Passwords must be changed if they have been used for a large amount of time.
-Mar 24, 2020 8:44:12 PM sample.SimAgent setup
-INFO: agent-7(Employee) has been initialised
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-INFO: Turn: 4 ended.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-0 has been compromised due to the following threat: Your account has been compromised.
-Mar 24, 2020 8:44:12 PM sample.SimAgent setup
-INFO: agent-6(CEO) has been initialised
-Mar 24, 2020 8:44:12 PM sample.SimAgent setup
-INFO: agent-8(CEO) has been initialised
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-1 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.SimAgent setup
-INFO: agent-9(CEO) has been initialised
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-2 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-7 has been compromised due to the following threat: Passwords must be changed if they have been used for a large amount of time.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-9 has been compromised due to the following threat: Your account has been compromised.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-INFO: Turn: 5 ended.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-1 has been compromised due to the following threat: Your account has been compromised.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-4 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-5 has been compromised due to the following threat: Your account has been compromised.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-6 has been compromised due to the following threat: Passwords must be changed if they have been used for a large amount of time.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-7 has been compromised due to the following threat: Passwords must be changed if they have been used for a large amount of time.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-8 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-INFO: Turn: 6 ended.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-1 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-2 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-3 has been compromised due to the following threat: Passwords must be changed if they have been used for a large amount of time.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-4 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-9 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-INFO: Turn: 7 ended.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-0 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-1 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-3 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-5 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-7 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-INFO: Turn: 8 ended.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-0 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-2 has been compromised due to the following threat: Your account has been compromised.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-4 has been compromised due to the following threat: Passwords must be changed if they have been used for a large amount of time.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-6 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-INFO: Turn: 9 ended.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-4 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-6 has been compromised due to the following threat: Should only use trusted networks to connect to from any device.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-WARNING: agent-9 has been compromised due to the following threat: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 24, 2020 8:44:12 PM sample.EngineAgent$1 action
-INFO: Turn: 10 ended.
+Mar 27, 2020 4:58:24 PM sample.SimAgent setup
+INFO: agent-0(CEO) has been initialised
+Mar 27, 2020 4:58:28 PM sample.EngineAgent$1$1 action
+INFO: NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Mar 27, 2020 4:58:28 PM sample.EngineAgent$1$2 action
+WARNING: agent-0 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Mar 27, 2020 4:58:28 PM sample.EngineAgent$1$2 action
+WARNING: agent-1 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Mar 27, 2020 4:58:28 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Mar 27, 2020 4:58:29 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Mar 27, 2020 4:58:29 PM sample.EngineAgent$1$3 onTick
+INFO: ALL REPLIES RECEIVED
+Mar 27, 2020 4:58:29 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-0 : Should only use trusted networks to connect to from any device. ==> Choice: B
+Mar 27, 2020 4:58:29 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 650, 0.7
+Mar 27, 2020 4:58:29 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-1 : Should only use trusted networks to connect to from any device. ==> Choice: B
+Mar 27, 2020 4:58:29 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 650, 0.7
+Mar 27, 2020 4:58:29 PM sample.EngineAgent$1$5 action
+INFO: Turn 1 has ended.
+Mar 27, 2020 4:58:30 PM sample.EngineAgent$1$1 action
+INFO: NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Mar 27, 2020 4:58:30 PM sample.EngineAgent$1$2 action
+WARNING: agent-0 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Mar 27, 2020 4:58:30 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Mar 27, 2020 4:58:31 PM sample.EngineAgent$1$3 onTick
+INFO: ALL REPLIES RECEIVED
+Mar 27, 2020 4:58:31 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-0 : Should only use trusted networks to connect to from any device. ==> Choice: B
+Mar 27, 2020 4:58:31 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 1100, 0.9799999999999999
+Mar 27, 2020 4:58:31 PM sample.EngineAgent$1$5 action
+INFO: Turn 2 has ended.
+Mar 27, 2020 4:58:32 PM sample.EngineAgent$1$1 action
+INFO: NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Mar 27, 2020 4:58:32 PM sample.EngineAgent$1$3 onTick
+INFO: ALL REPLIES RECEIVED
+Mar 27, 2020 4:58:32 PM sample.EngineAgent$1$5 action
+INFO: Turn 3 has ended.
+Mar 27, 2020 4:58:34 PM sample.EngineAgent$1$1 action
+INFO: NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Mar 27, 2020 4:58:34 PM sample.EngineAgent$1$3 onTick
+INFO: ALL REPLIES RECEIVED
+Mar 27, 2020 4:58:34 PM sample.EngineAgent$1$5 action
+INFO: Turn 4 has ended.
+Mar 27, 2020 4:58:36 PM sample.EngineAgent$1$1 action
+INFO: NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Mar 27, 2020 4:58:36 PM sample.EngineAgent$1$3 onTick
+INFO: ALL REPLIES RECEIVED
+Mar 27, 2020 4:58:36 PM sample.EngineAgent$1$5 action
+INFO: Turn 5 has ended.
+Mar 27, 2020 4:58:38 PM sample.EngineAgent$1$1 action
+INFO: NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Mar 27, 2020 4:58:38 PM sample.EngineAgent$1$3 onTick
+INFO: ALL REPLIES RECEIVED
+Mar 27, 2020 4:58:38 PM sample.EngineAgent$1$5 action
+INFO: Turn 6 has ended.
+Mar 27, 2020 4:58:40 PM sample.EngineAgent$1$1 action
+INFO: NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Mar 27, 2020 4:58:40 PM sample.EngineAgent$1$2 action
+WARNING: agent-1 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
+Mar 27, 2020 4:58:40 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Mar 27, 2020 4:58:41 PM sample.EngineAgent$1$3 onTick
+INFO: ALL REPLIES RECEIVED
+Mar 27, 2020 4:58:41 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-1 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: A
+Mar 27, 2020 4:58:41 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 1150, 0.84
+Mar 27, 2020 4:58:41 PM sample.EngineAgent$1$5 action
+INFO: Turn 7 has ended.
+Mar 27, 2020 4:58:42 PM sample.EngineAgent$1$1 action
+INFO: NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Mar 27, 2020 4:58:42 PM sample.EngineAgent$1$3 onTick
+INFO: ALL REPLIES RECEIVED
+Mar 27, 2020 4:58:42 PM sample.EngineAgent$1$5 action
+INFO: Turn 8 has ended.
+Mar 27, 2020 4:58:44 PM sample.EngineAgent$1$1 action
+INFO: NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Mar 27, 2020 4:58:44 PM sample.EngineAgent$1$3 onTick
+INFO: ALL REPLIES RECEIVED
+Mar 27, 2020 4:58:44 PM sample.EngineAgent$1$5 action
+INFO: Turn 9 has ended.
+Mar 27, 2020 4:58:46 PM sample.EngineAgent$1$1 action
+INFO: NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Mar 27, 2020 4:58:46 PM sample.EngineAgent$1$3 onTick
+INFO: ALL REPLIES RECEIVED
+Mar 27, 2020 4:58:46 PM sample.EngineAgent$1$5 action
+INFO: Turn 10 has ended.
+Mar 27, 2020 4:58:46 PM sample.EngineAgent$1$5 action
+INFO: 
+------SIMULATION ENDED------
+Mar 27, 2020 4:58:46 PM sample.EngineAgent$1$5 action
+INFO: 
+----------------------------
+Mar 27, 2020 4:58:46 PM sample.EngineAgent$1$5 action
+INFO: 
+------AGENT SCORES:------
+Mar 27, 2020 4:58:46 PM sample.EngineAgent$1$5 action
+INFO: agent-0 ==> Points: 1400, Rate: 0.9799999999999999
+Mar 27, 2020 4:58:46 PM sample.EngineAgent$1$5 action
+INFO: agent-1 ==> Points: 1450, Rate: 0.84

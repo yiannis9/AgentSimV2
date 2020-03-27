@@ -104,7 +104,7 @@ public class Main extends Application {
         //Agent Slider
         Label agLabel = new Label("Agents:");
         grid.add(agLabel, 0, 3);
-        Slider agSlider = new Slider(10,100,50);
+        Slider agSlider = new Slider(2,100,50);
         grid.add(agSlider, 1, 3);
         agSlider.setShowTickMarks(true);
         agSlider.setShowTickLabels(true);
