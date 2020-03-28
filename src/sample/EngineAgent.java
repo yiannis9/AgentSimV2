@@ -63,13 +63,13 @@ public class EngineAgent extends Agent {
         //I do this to give time for other agents to launch their arguments and print in the logger
         doWait(2000);
 
-        
-        TickerBehaviour mainLoop = new TickerBehaviour(this,2000) {
+
+        TickerBehaviour mainLoop = new TickerBehaviour(this,8000) {
             private boolean finished;
             @Override
             public void onTick() {
                 //INIT INFECTED AGENT LIST EACH TURNS--EVERY TURN THE INFECTED AGENTS CHANGE!!!
-                //PUT HERE ALL NECESSARY VARIABLES THAT NEED TO BE RE-INITIALLISED EVERY TURN
+                //PUT HERE ALL NECESSARY VARIABLES THAT NEED TO BE RE-INITIALISED EVERY TURN
                 ArrayList<String> infectedAgents = new ArrayList<String>();
                 Random rnd = new Random();
                 SequentialBehaviour seq = new SequentialBehaviour();
@@ -87,7 +87,11 @@ public class EngineAgent extends Agent {
                                 infectedAgents.add(a.getName());
                             }
                         }
-                        logger.info("NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!");
+                        if (!infectedAgents.isEmpty()){
+                            logger.info(infectedAgents.size()+ " NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!");
+                        }else{
+                            logger.info("NO NEW DECISIONS TO TAKE THIS TURN!");
+                        }
                     }
                 });
                 //2
@@ -127,17 +131,16 @@ public class EngineAgent extends Agent {
                 });
                 //3
                 //RECEIVING ACL MESSAGES!
-                seq.addSubBehaviour(new TickerBehaviour(this.myAgent,500) {
+                seq.addSubBehaviour(new TickerBehaviour(this.myAgent,50) {
                     @Override
                     public void onTick() {
                         //IF WE GOT ALL REPLIES FROM INFECTED AGENTS OR OTHERWISE
-                        if (replies.size()!=infectedAgents.size()) {
+                        if (replies.size() != infectedAgents.size()) {
                             ACLMessage msg = receive();
                             replies.add(msg);
                             logger.info("NEW MESSAGE IN ENGINE MAIL BOX");
-
-                        }else{
-                            logger.info("ALL REPLIES RECEIVED");
+                        } else {
+                            logger.info(replies.size()+ " REPLIES RECEIVED");
                             done();
                             stop();
                         }
@@ -192,12 +195,10 @@ public class EngineAgent extends Agent {
                                 ag.setPoints(ag.getPoints() + 300);
                             }
                         }
-                        logger.info("Turn "+ turnsTaken + " has ended.");
-                        turnsTaken++;
+                        logger.info("TURN "+ turnsTaken + " HAS ENDED.");
 
                         //STOP MAIN TICKER BEHAVIOUR ENDING THE ENGINE'S TASKS
-                        if (turnsTaken == Turns+1){
-                            //THIS CAN BE LEFT ENTIRELY AT THE END
+                        if (Objects.equals(turnsTaken, Turns)){
                             //FINAL LOGGING INFO- AGENT SCORES
                             logger.info("\n------SIMULATION ENDED------");
                             logger.info("\n----------------------------");
@@ -206,9 +207,12 @@ public class EngineAgent extends Agent {
                             for (AgentPointCalculator ag: pointsAndRates){
                                 logger.info(String.format("%s ==> Points: %d, Rate: %s", ag.getName(), ag.getPoints(), ag.getThreatRate()));
                             }
-                            done();
-                            stop();
+//                            done();
+//                            stop();
+                            myAgent.doSuspend();
                         }
+                        //INCREMENT TURNS
+                        turnsTaken++;
                     }
                 });
                 //ADD SEQUENTIAL TO TICKER BEHAVIOUR
@@ -217,7 +221,6 @@ public class EngineAgent extends Agent {
         };
         //ADD MY MAIN BEHAVIOUR TO SETUP SO THAT IT IS SCHEDULED
         addBehaviour(mainLoop);
-
 
     //END OF SETUP
     }

@@ -41,8 +41,10 @@ public class Game {
     private Integer turnsTaken=1;
     public HashMap<String, int[]> agentsGrid;
     public ContainerController container;
+    public Groups groups;
 
-    public Game(Integer Agents, Integer Turns, ArrayList<Rule> ruleList) throws StaleProxyException {
+
+    public Game(Integer Agents, Integer Turns, ArrayList<Rule> ruleList, Groups groups) throws StaleProxyException {
         //init stack node and scene
         canvas = new BorderPane();
         gameScene = new Scene(canvas, 1240, 720);

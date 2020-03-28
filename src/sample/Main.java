@@ -8,6 +8,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
@@ -30,6 +31,8 @@ public class Main extends Application {
     public Integer agents;
     public Integer turns;
     public ArrayList<Rule> finalRuleList;
+    public Groups groups;
+    public ArrayList<String> departments = new ArrayList<String>();
 
     public static void main(String[] args) {
         launch(args);
@@ -63,15 +66,18 @@ public class Main extends Application {
         //create list to store jsonRules from jason file
         finalRuleList = new ArrayList<Rule>();
 
+        //call func to load group specification rules
+        groupsLoad(grid);
         //call func to load game specification rules
         gameSpecLoad(grid);
 
 
+
         //Sliders UI - quite a lot of work for sliders to work
         Label turnsLabel = new Label("Turns:");
-        grid.add(turnsLabel, 0, 2);
+        grid.add(turnsLabel, 0, 3);
         Slider turnSlider = new Slider(10,100,50);
-        grid.add(turnSlider, 1, 2);
+        grid.add(turnSlider, 1, 3);
         turnSlider.setShowTickMarks(true);
         turnSlider.setShowTickLabels(true);
         turnSlider.setSnapToTicks(true);
@@ -98,14 +104,13 @@ public class Main extends Application {
             turns = 50;
         }
 
-
-        grid.add(valSlider,2,2);
+        grid.add(valSlider,2,3);
 
         //Agent Slider
         Label agLabel = new Label("Agents:");
-        grid.add(agLabel, 0, 3);
-        Slider agSlider = new Slider(2,100,50);
-        grid.add(agSlider, 1, 3);
+        grid.add(agLabel, 0, 4);
+        Slider agSlider = new Slider(10,100,50);
+        grid.add(agSlider, 1, 4);
         agSlider.setShowTickMarks(true);
         agSlider.setShowTickLabels(true);
         agSlider.setSnapToTicks(true);
@@ -126,7 +131,7 @@ public class Main extends Application {
                 agents = (int)(agSlider.getValue());
             }
         });
-        grid.add(valAgSlider,2,3);
+        grid.add(valAgSlider,2,4);
         //some bug with the slider not being able to parse default value (50) so had to get around it
         if (agents == null) {
             agents = 50;
@@ -138,7 +143,7 @@ public class Main extends Application {
         HBox hbBtn = new HBox(10);
         hbBtn.setAlignment(Pos.CENTER);
         hbBtn.getChildren().add(startBtn);
-        grid.add(hbBtn, 1, 4);
+        grid.add(hbBtn, 10, 10);
 
         startBtn.setOnAction(new EventHandler<ActionEvent>() {
 
@@ -146,7 +151,7 @@ public class Main extends Application {
             public void handle(ActionEvent e) {
                 Game game = null;
                 try {
-                    game = new Game(agents,turns,finalRuleList);
+                    game = new Game(agents,turns,finalRuleList,groups);
                 } catch (StaleProxyException ex) {
                     ex.printStackTrace();
                 }
@@ -163,6 +168,27 @@ public class Main extends Application {
 
         //pass scene to the stage
         primaryStage.setScene(menu);
+    }
+
+    //no need to use this. Everything must be specified in the group's JSON file
+    public  void gencheckboxes(GridPane grid){
+        //create checkboxes and add to grid
+        Label groupLabel = new Label("Groups:");
+        grid.add(groupLabel, 0, 6);
+        int gRowIndx = 7;
+        int gColIndx = 0;
+        for (int i = 0; i < departments.size(); i++) {
+            String s = departments.get(i);
+            if (i  % 2 == 0){
+                gRowIndx++;
+                gColIndx = 0;
+            }
+            //checkbox
+            CheckBox javaCheckBox = new CheckBox(s);
+            javaCheckBox.setIndeterminate(false);
+            grid.add(javaCheckBox, gColIndx, gRowIndx);
+            gColIndx++;
+        }
     }
 
     public void gameSpecLoad (GridPane grid){
@@ -255,36 +281,48 @@ public class Main extends Application {
             // A JSON array. JSONObject supports return 0;java.util.List interface.
             JSONArray jsonGroups = (JSONArray) jsonObject.get("Department");
 
+            ArrayList<Role> allRoles = new ArrayList<Role>();
             // An iterator over a collection. Iterator takes the place of Enumeration in the Java Collections Framework.
             for (int i = 0; i < jsonGroups.size(); i++) {
 
                 // get json object at index i
                 JSONObject jsonGroup = (JSONObject) jsonGroups.get(i);
-                //extract type and description from json object
-                String type = (String) jsonGroup.get("Type");
-                String desc = (String) jsonGroup.get("Desc");
-                //create new rule and parse info
-                Rule rule = new Rule(type,desc);
+                //extract fields from json object
+                String departmentName = (String) jsonGroup.get("Name");
+                //testing
+//                System.out.println(departmentName);
+                JSONArray positions  = (JSONArray) jsonGroup.get("RoleList");
 
 
-                //now we get the choice list of the rule to iterate over
-                JSONArray choices = (JSONArray) jsonGroup.get("ChoiceList");
-                for (int x = 0; x < choices.size(); x++) {
+                for (int x = 0; x < positions.size(); x++) {
                     //need to parse it as a new json object at index x
-                    JSONObject chObj =  (JSONObject) choices.get(x);
+                    JSONObject chObj =  (JSONObject) positions.get(x);
                     //now we add
-                    String cid= (String) chObj.get("CID");
-                    String reward= (String) chObj.get("Reward");
-                    String threatChange= (String) chObj.get("ThreatChange");
-                    String cDesc= (String) chObj.get("cDesc");
-                    Choice ch = new Choice(cid,reward,threatChange,cDesc);
-                    rule.getChoiceList().add(ch);
+                    String position= (String) chObj.get("Position");
+                    String aDegree = (String) chObj.get("ActionDegree").toString();
+                    Integer actionDegree = Integer.valueOf(aDegree);
+                    String lmt= (String) chObj.get("Limit").toString();
+                    Integer limit= Integer.valueOf(lmt);
+                    Role role = new Role(position,departmentName,actionDegree,limit);
+                    allRoles.add(role);
+//                    System.out.println(position);
+//                    System.out.println(actionDegree);
+//                    System.out.println(limit);
 
-            }
+
+                }
                 System.out.println();
-                finalRuleList.add(rule);
+                JSONArray attributesJSON = (JSONArray) jsonObject.get("Attributes");
+                String[] attributes = new String[attributesJSON.size()];
+                for (int i1 = 0; i1 < attributesJSON.size(); i1++) {
+                    Object att = attributesJSON.get(i1);
+                    String attS = (String) att;
+                    attributes[i1]=attS;
+                }
+//                System.out.println(Arrays.toString(attributes));
+                Groups groups = new Groups(attributes, allRoles);
 
-
+                departments.add(departmentName);
             }
         } catch (Exception e) {
             e.printStackTrace();
