@@ -31,7 +31,7 @@ public class SimAgent extends Agent {
                 logger = (Logger) args[1];
                 }
 
-            //Set random attribute and Initialise
+            //SET RANDOM ATTRIBUTE AND INITIALISE
             attribute = groups.getAttributes()[rand.nextInt(groups.getAttributes().length)];
             logger.info(agName + "("+ role.getPositionName() +" - "+ attribute + ") has been initialised");
 
@@ -101,7 +101,7 @@ public class SimAgent extends Agent {
                                     }
                                     curChoice = moreRewarding.getCID();
                                 }
-                                msgChoice.setContent(receivedRule.getDesc() + ":" + curChoice);
+                                msgChoice.setContent(receivedRule.getDesc() + ":" + curChoice + ":"+ role.getDepartment());
                                 send(msgChoice);
                             }
                         });

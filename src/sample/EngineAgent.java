@@ -43,13 +43,13 @@ public class EngineAgent extends Agent {
             logger.info("GAME ENGINE AGENT INITIALISED. Agents:"+Agents+" /Turns:"+Turns);
         }
 
-        //GENERATE AGENTS IN THE SAME CONTAINER AND PASS ROLES
-        createAgents(groups);
-
-
         //initialise list with points and rates
         ArrayList<AgentPointCalculator> pointsAndRates =genPointsAndRateList(Agents);
         ArrayList<Rule> finalRuleList = ruleList;
+
+        //GENERATE AGENTS IN THE SAME CONTAINER AND PASS ROLES
+        createAgents(groups);
+
 
         //I do this to give time for other agents to launch their arguments and print in the logger
         doWait(2000);
@@ -59,10 +59,10 @@ public class EngineAgent extends Agent {
         if (Agents==10){
             ticks=1000;
         }else if (Agents>10 && Agents<50){
-            ticks=3000;
+            ticks=5000;
         }
         else{
-            ticks=8000;
+            ticks=10000;
         }
         //INITIALISE MAIN LOOP OF ENGINE
         TickerBehaviour mainLoop = new TickerBehaviour(this,ticks) {
@@ -160,6 +160,7 @@ public class EngineAgent extends Agent {
                             String[] descAndChoice = msg.getContent().split("[:]");
                             String cDesc = descAndChoice[0];
                             String CID = descAndChoice[1];
+                            String department = descAndChoice[2];
                             logger.info("Response from " + sender + " : " +cDesc +" ==> Choice: " + CID);
 
                             //HERE I GET THE CHOICE AND APPLY IT TO THE POINTS AND RATES
@@ -168,15 +169,44 @@ public class EngineAgent extends Agent {
                                     if (Objects.equals(r.getDesc(),cDesc)) {
                                         for (Choice ch : r.getChoiceList()) {
                                             if (Objects.equals(ch.getCID(),CID)) {
+                                                //FIND CHOICE REWARD AND THREAT CHANGE
                                                 Integer addedBonus = Integer.valueOf(ch.getReward());
                                                 Double threatChange = Double.valueOf(ch.getThreatChange());
+                                                //AND APPLY THEM TO APC
+                                                String dep = "";
+                                                Integer ActionDegree = null;
                                                 for (AgentPointCalculator apc : pointsAndRates) {
+                                                    //APPLY ONLY TO SENDER FIRST
                                                     if (Objects.equals(apc.getName(),sender)) {
+                                                        dep = apc.getRole().getDepartment();
+                                                        ActionDegree = apc.getRole().getActionDegree();
                                                         apc.setPoints(apc.getPoints() + addedBonus);
                                                         apc.setThreatRate(apc.getThreatRate() * threatChange);
                                                         logger.info(sender+" now has "+apc.getPoints() +", "+ apc.getThreatRate());
                                                     }
                                                 }
+                                                //THEN TO EVERYONE IN DEPARTMENT IF DEGREE IS 2.
+                                                if (Objects.equals(ActionDegree,2)){
+                                                    for (AgentPointCalculator apc : pointsAndRates) {
+                                                        if (apc.getName() != sender){
+                                                            if (Objects.equals(apc.getRole().getDepartment(),dep)){
+                                                                apc.setPoints(apc.getPoints() + addedBonus);
+                                                                apc.setThreatRate(apc.getThreatRate() * threatChange);
+                                                                logger.info(apc.getName()+" now has "+apc.getPoints() +", "+ apc.getThreatRate()+ " because of "+sender+"'s decisions.");
+                                                            }
+                                                        }
+                                                    }
+                                                //OR TO ALL AGENTS IF DEGREE IS 3.
+                                                } else if (Objects.equals(ActionDegree,3)){
+                                                    for (AgentPointCalculator apc : pointsAndRates) {
+                                                        if (apc.getName() != sender){
+                                                                apc.setPoints(apc.getPoints() + addedBonus);
+                                                                apc.setThreatRate(apc.getThreatRate() * threatChange);
+                                                                logger.info(apc.getName()+" now has "+apc.getPoints() +", "+ apc.getThreatRate()+ " because of "+sender+"'s decisions.");
+                                                        }
+                                                    }
+                                                }
+
                                             }
                                         }
                                     }
@@ -253,12 +283,16 @@ public class EngineAgent extends Agent {
         Object args2[] = new Object[3];
         args2[1] = logger;
         args2[2] = groups;
-
+        
         for (int agentcounter = 0; agentcounter < Agents; agentcounter++) {
             //getting random roles and passing to agents
             ArrayList<Role> allRoles = groups.getAllRoles();
             Role role = allRoles.get(randRole.nextInt(allRoles.size()));
-
+            for (AgentPointCalculator ag: pointsAndRates){
+                if (Objects.equals(ag.getName(),"agent-"+agentcounter)){
+                    ag.setRole(role);
+                }
+            }
             args2[0] = role;
             AgentController agent = null;
             try {

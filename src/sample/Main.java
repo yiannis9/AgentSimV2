@@ -138,7 +138,7 @@ public class Main extends Application {
 
 
         //creating start button and its handling events.
-        Button startBtn = new Button("Start");
+        Button startBtn = new Button("Generate");
         HBox hbBtn = new HBox(10);
         hbBtn.setAlignment(Pos.CENTER);
         hbBtn.getChildren().add(startBtn);

@@ -4,6 +4,7 @@ public class AgentPointCalculator {
     private Integer points;
     private Double threatRate;
     private String name;
+    private Role role;
 
     public AgentPointCalculator(Integer points, Double threatRate, String name){
         this.threatRate =threatRate;
@@ -34,5 +35,13 @@ public class AgentPointCalculator {
 
     public void setPoints(Integer points) {
         this.points = points;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
     }
 }
