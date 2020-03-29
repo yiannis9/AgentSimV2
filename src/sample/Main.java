@@ -72,7 +72,6 @@ public class Main extends Application {
         gameSpecLoad(grid);
 
 
-
         //Sliders UI - quite a lot of work for sliders to work
         Label turnsLabel = new Label("Turns:");
         grid.add(turnsLabel, 0, 3);
@@ -155,6 +154,7 @@ public class Main extends Application {
                 } catch (StaleProxyException ex) {
                     ex.printStackTrace();
                 }
+                assert game != null;
                 primaryStage.setScene(game.gameScene);
             }
         });
@@ -311,19 +311,21 @@ public class Main extends Application {
 
 
                 }
-                System.out.println();
-                JSONArray attributesJSON = (JSONArray) jsonObject.get("Attributes");
-                String[] attributes = new String[attributesJSON.size()];
-                for (int i1 = 0; i1 < attributesJSON.size(); i1++) {
-                    Object att = attributesJSON.get(i1);
-                    String attS = (String) att;
-                    attributes[i1]=attS;
-                }
-//                System.out.println(Arrays.toString(attributes));
-                Groups groups = new Groups(attributes, allRoles);
 
                 departments.add(departmentName);
             }
+
+            JSONArray attributesJSON = (JSONArray) jsonObject.get("Attributes");
+            String[] attributes = new String[attributesJSON.size()];
+            for (int i1 = 0; i1 < attributesJSON.size(); i1++) {
+                Object att = attributesJSON.get(i1);
+                String attS = (String) att;
+                attributes[i1]=attS;
+            }
+//                System.out.println(Arrays.toString(attributes));
+            groups = new Groups(attributes, allRoles);
+//            System.out.println(groups.getAllRoles().size());
+
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -13,16 +13,12 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
-import javafx.scene.shape.Circle;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.lang.Runtime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Random;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
@@ -70,7 +66,7 @@ public class Game {
         canvas.setCenter(grid);
 
         //initialise agents
-        initAgents(grid,Agents,Turns,logger,ruleList);
+        initAgents(grid,Agents,Turns,logger,ruleList,groups);
 
     }
 
@@ -134,7 +130,7 @@ public class Game {
     }
 
     //initialise all agents method and order them in grid
-    public void initAgents (GridPane grid,Integer Agents, Integer Turns, Logger logger, ArrayList<Rule> ruleList) {
+    public void initAgents (GridPane grid,Integer Agents, Integer Turns, Logger logger, ArrayList<Rule> ruleList,Groups groups) {
         // init agents
         AgentController agent = null;
         VisAgent guiAgent = null;
@@ -149,11 +145,12 @@ public class Game {
             ContainerController container = runtime.createMainContainer(profile);
 
             //create Engine agent which handles all other agents
-            Object argsEngine[] = new Object[4];
+            Object argsEngine[] = new Object[5];
             argsEngine[0] = Turns;
             argsEngine[1] = logger;
             argsEngine[2] = Agents;
             argsEngine[3] = ruleList;
+            argsEngine[4] = groups;
             AgentController agentEngine = container.createNewAgent("agent-engine", EngineAgent.class.getName(), argsEngine);
             agentEngine.start();
 

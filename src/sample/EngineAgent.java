@@ -3,13 +3,10 @@ package sample;
 import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.*;
-import jade.domain.FIPAAgentManagement.Search;
-import jade.domain.FIPAAgentManagement.SearchConstraints;
 import jade.lang.acl.ACLMessage;
 import jade.wrapper.AgentController;
 import jade.wrapper.StaleProxyException;
 
-import javax.lang.model.util.Types;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
@@ -25,18 +22,15 @@ public class EngineAgent extends Agent {
     //
     private Logger logger=null;
     public ArrayList<Rule> ruleList = new ArrayList<Rule>();
+    public ArrayList<Rule> finalRuleList;
     private ArrayList<AgentPointCalculator> pointsAndRates = new ArrayList<AgentPointCalculator>();
     private Integer Agents=0;
-    public ArrayList<Rule> finalRuleList;
     private Integer turnsTaken=1;
     private Integer Turns=0;
     private ArrayList<String>  infectedAgents;
+    private Groups groups;
 
     protected void setup() {
-        //setting up important variables which will be used often
-//        SequentialBehaviour seq = new SequentialBehaviour();
-
-
         //getting variables from parsed agent arguments
         Object[] args = getArguments();
         if (args != null) {
@@ -45,16 +39,13 @@ public class EngineAgent extends Agent {
             logger = (Logger) args[1];
             Agents= (Integer) args[2];
             ruleList = (ArrayList<Rule>) args[3];
+            groups = (Groups) args[4];
             logger.info("GAME ENGINE AGENT INITIALISED. Agents:"+Agents+" /Turns:"+Turns);
         }
 
         //GENERATE AGENTS IN THE SAME CONTAINER AND PASS ROLES
-        ArrayList<String> rolesList = new ArrayList<String>();
-        rolesList.add("Supervisor");
-        rolesList.add( "CEO");
-        rolesList.add("Employee");
-        rolesList.add("ITadmin");
-        createAgents(rolesList);
+        createAgents(groups);
+
 
         //initialise list with points and rates
         ArrayList<AgentPointCalculator> pointsAndRates =genPointsAndRateList(Agents);
@@ -63,8 +54,18 @@ public class EngineAgent extends Agent {
         //I do this to give time for other agents to launch their arguments and print in the logger
         doWait(2000);
 
-
-        TickerBehaviour mainLoop = new TickerBehaviour(this,8000) {
+        //min maxing simulation times with the number of agents...
+        int ticks;
+        if (Agents==10){
+            ticks=1000;
+        }else if (Agents>10 && Agents<50){
+            ticks=3000;
+        }
+        else{
+            ticks=8000;
+        }
+        //INITIALISE MAIN LOOP OF ENGINE
+        TickerBehaviour mainLoop = new TickerBehaviour(this,ticks) {
             private boolean finished;
             @Override
             public void onTick() {
@@ -131,7 +132,7 @@ public class EngineAgent extends Agent {
                 });
                 //3
                 //RECEIVING ACL MESSAGES!
-                seq.addSubBehaviour(new TickerBehaviour(this.myAgent,50) {
+                seq.addSubBehaviour(new TickerBehaviour(this.myAgent,10) {
                     @Override
                     public void onTick() {
                         //IF WE GOT ALL REPLIES FROM INFECTED AGENTS OR OTHERWISE
@@ -247,13 +248,17 @@ public class EngineAgent extends Agent {
         return pointsAndRates;
     }
 
-    public void createAgents(ArrayList<String> rolesList) {
+    public void createAgents(Groups groups) {
         Random randRole = new Random();
-        Object args2[] = new Object[2];
+        Object args2[] = new Object[3];
         args2[1] = logger;
+        args2[2] = groups;
+
         for (int agentcounter = 0; agentcounter < Agents; agentcounter++) {
             //getting random roles and passing to agents
-            String role = rolesList.get(randRole.nextInt(rolesList.size()));
+            ArrayList<Role> allRoles = groups.getAllRoles();
+            Role role = allRoles.get(randRole.nextInt(allRoles.size()));
+
             args2[0] = role;
             AgentController agent = null;
             try {

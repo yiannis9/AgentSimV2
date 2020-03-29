@@ -17,7 +17,7 @@ public class Groups {
         return allRoles;
     }
 
-    public void setDepartments(ArrayList<Role> allRoles) {
+    public void setAllRoles(ArrayList<Role> allRoles) {
         this.allRoles = allRoles;
     }
 
