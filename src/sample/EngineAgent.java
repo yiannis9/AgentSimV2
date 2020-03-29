@@ -7,10 +7,9 @@ import jade.lang.acl.ACLMessage;
 import jade.wrapper.AgentController;
 import jade.wrapper.StaleProxyException;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Objects;
-import java.util.Random;
+import javax.swing.*;
+import java.io.*;
+import java.util.*;
 import java.util.logging.Logger;
 
 
@@ -29,6 +28,7 @@ public class EngineAgent extends Agent {
     private Integer Turns=0;
     private ArrayList<String>  infectedAgents;
     private Groups groups;
+    private Long fileTimestamp;
 
     protected void setup() {
         //getting variables from parsed agent arguments
@@ -50,7 +50,11 @@ public class EngineAgent extends Agent {
         //GENERATE AGENTS IN THE SAME CONTAINER AND PASS ROLES
         createAgents(groups);
 
-
+        try {
+            parseToCSV(true,"Agent Name", "Position", "Department","Action Degree", "Rule Description", "CID", "Reward", "threat Change", "Infection Method","-");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         //I do this to give time for other agents to launch their arguments and print in the logger
         doWait(2000);
 
@@ -183,26 +187,41 @@ public class EngineAgent extends Agent {
                                                         apc.setPoints(apc.getPoints() + addedBonus);
                                                         apc.setThreatRate(apc.getThreatRate() * threatChange);
                                                         logger.info(sender+" now has "+apc.getPoints() +", "+ apc.getThreatRate());
+                                                        try {
+                                                            parseToCSV(false,sender, apc.getRole().getPositionName(), dep, apc.getRole().getActionDegree().toString(),r.getDesc(),CID,addedBonus.toString(),threatChange.toString(),sender,turnsTaken.toString());
+                                                        } catch (IOException e) {
+                                                            e.printStackTrace();
+                                                        }
                                                     }
                                                 }
                                                 //THEN TO EVERYONE IN DEPARTMENT IF DEGREE IS 2.
                                                 if (Objects.equals(ActionDegree,2)){
                                                     for (AgentPointCalculator apc : pointsAndRates) {
-                                                        if (apc.getName() != sender){
+                                                        if (!Objects.equals(apc.getName(),sender)){
                                                             if (Objects.equals(apc.getRole().getDepartment(),dep)){
                                                                 apc.setPoints(apc.getPoints() + addedBonus);
                                                                 apc.setThreatRate(apc.getThreatRate() * threatChange);
                                                                 logger.info(apc.getName()+" now has "+apc.getPoints() +", "+ apc.getThreatRate()+ " because of "+sender+"'s decisions.");
+                                                                try {
+                                                                    parseToCSV(false,apc.getName(), apc.getRole().getPositionName(), dep, apc.getRole().getActionDegree().toString(),r.getDesc(),CID,addedBonus.toString(),threatChange.toString(), sender,turnsTaken.toString());
+                                                                } catch (IOException e) {
+                                                                    e.printStackTrace();
+                                                                }
                                                             }
                                                         }
                                                     }
                                                 //OR TO ALL AGENTS IF DEGREE IS 3.
                                                 } else if (Objects.equals(ActionDegree,3)){
                                                     for (AgentPointCalculator apc : pointsAndRates) {
-                                                        if (apc.getName() != sender){
-                                                                apc.setPoints(apc.getPoints() + addedBonus);
-                                                                apc.setThreatRate(apc.getThreatRate() * threatChange);
-                                                                logger.info(apc.getName()+" now has "+apc.getPoints() +", "+ apc.getThreatRate()+ " because of "+sender+"'s decisions.");
+                                                        if (!Objects.equals(apc.getName(), sender)){
+                                                            apc.setPoints(apc.getPoints() + addedBonus);
+                                                            apc.setThreatRate(apc.getThreatRate() * threatChange);
+                                                            logger.info(apc.getName()+" now has "+apc.getPoints() +", "+ apc.getThreatRate()+ " because of "+sender+"'s decisions.");
+                                                            try {
+                                                                parseToCSV(false,apc.getName(), apc.getRole().getPositionName(), dep, apc.getRole().getActionDegree().toString(),r.getDesc(),CID,addedBonus.toString(),threatChange.toString(), sender, turnsTaken.toString());
+                                                            } catch (IOException e) {
+                                                                e.printStackTrace();
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -238,8 +257,8 @@ public class EngineAgent extends Agent {
                             for (AgentPointCalculator ag: pointsAndRates){
                                 logger.info(String.format("%s ==> Points: %d, Rate: %s", ag.getName(), ag.getPoints(), ag.getThreatRate()));
                             }
-//                            done();
-//                            stop();
+
+                            JOptionPane.showMessageDialog(null,"SIMULATION DONE! RESULTS AND LOGS AVAILABLE!");
                             myAgent.doSuspend();
                         }
                         //INCREMENT TURNS
@@ -308,6 +327,31 @@ public class EngineAgent extends Agent {
             } catch (StaleProxyException e) {
                 e.printStackTrace();
             }
+        }
+
+    }
+
+    public void parseToCSV(Boolean newOrOld, String AgName, String role, String department, String actionDegree, String ruleDescription, String CID, String Reward, String threatChange, String howInfected, String Turn) throws IOException {
+        try {
+            //INITIALISE WRITERS
+            if (newOrOld){
+                fileTimestamp = System.currentTimeMillis();
+            }
+
+            String path = "src/sample/results/results-";
+            String ext = ".csv";
+            File csvFile = new File(path+fileTimestamp+ext);
+            FileWriter csvWriter = new FileWriter(csvFile,true);
+            BufferedWriter bw = new BufferedWriter(csvWriter);
+            PrintWriter pw = new PrintWriter(bw);
+
+            pw.println(AgName + "," + role + "," + department + "," + actionDegree + "," + ruleDescription + "," + CID + "," + Reward + threatChange + "," + howInfected);
+
+            //flush and close writer
+            pw.flush();
+            pw.close();
+        } catch (Exception e){
+            e.printStackTrace();
         }
 
     }
