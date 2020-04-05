@@ -315,7 +315,7 @@ public class Main extends Application {
                 departments.add(departmentName);
             }
 
-            JSONArray attributesJSON = (JSONArray) jsonObject.get("Attributes");
+            JSONArray attributesJSON = (JSONArray) jsonObject.get("Attitudes");
             String[] attributes = new String[attributesJSON.size()];
             for (int i1 = 0; i1 < attributesJSON.size(); i1++) {
                 Object att = attributesJSON.get(i1);

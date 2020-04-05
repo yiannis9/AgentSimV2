@@ -15,7 +15,7 @@ public class SimAgent extends Agent {
     private String abc = "AB";
     private Random rand = new Random();
     private Logger logger = null;
-    private String attribute = "Cautious";
+    private String attitude = "";
     private ACLMessage msg;
     private Groups groups;
 
@@ -32,8 +32,8 @@ public class SimAgent extends Agent {
                 }
 
             //SET RANDOM ATTRIBUTE AND INITIALISE
-            attribute = groups.getAttributes()[rand.nextInt(groups.getAttributes().length)];
-            logger.info(agName + "("+ role.getPositionName() +" - "+ attribute + ") has been initialised");
+            attitude = groups.getAttitudes()[rand.nextInt(groups.getAttitudes().length)];
+            logger.info(agName + "("+ role.getPositionName() +" - "+ attitude + ") has been initialised");
 
 
             Rule receivedRule = null;
@@ -77,12 +77,12 @@ public class SimAgent extends Agent {
                                 //size of choice list of selected rule. This enables us to have rules of varying
                                 //no of choices without getting null pointers or out of index entries. I HOPE
                                 int chSize = receivedRule.getChoiceList().size();
-                                //check for agent attribute
+                                //check for agent attitude
                                 String curChoice = "";
-                                if (Objects.equals(attribute, "Randomiser")) {
+                                if (Objects.equals(attitude, "Randomiser")) {
                                     curChoice = String.valueOf(choicesString.charAt(rand.nextInt(chSize)));
                                 }
-                                else if (Objects.equals(attribute, "Cautious")) {
+                                else if (Objects.equals(attitude, "Cautious")) {
                                     //get least dangerous choice in terms of threat change
                                     Choice leastDangerous = receivedRule.getChoiceList().get(0);
                                     for (Choice ch: receivedRule.getChoiceList()){
@@ -91,7 +91,7 @@ public class SimAgent extends Agent {
                                         }
                                     }
                                     curChoice = leastDangerous.getCID();
-                                } else if (Objects.equals(attribute, "Profit Maximiser")) {
+                                } else if (Objects.equals(attitude, "Profit Maximiser")) {
                                     //get most rewarding choice in terms of reward
                                     Choice moreRewarding = receivedRule.getChoiceList().get(0);
                                     for (Choice ch: receivedRule.getChoiceList()){

@@ -5,10 +5,10 @@ import java.util.ArrayList;
 
 public class Groups {
     private ArrayList<Role> allRoles;
-    private String[] Attributes;
+    private String[] Attitudes;
 
-    public Groups(String[] Attributes, ArrayList<Role> allRoles){
-        this.Attributes=Attributes;
+    public Groups(String[] Attitudes, ArrayList<Role> allRoles){
+        this.Attitudes=Attitudes;
         this.allRoles = allRoles;
 
     }
@@ -21,11 +21,11 @@ public class Groups {
         this.allRoles = allRoles;
     }
 
-    public String[] getAttributes() {
-        return Attributes;
+    public String[] getAttitudes() {
+        return Attitudes;
     }
 
-    public void setAttributes(String[] attributes) {
-        Attributes = attributes;
+    public void setAttitudes(String[] Attitudes) {
+        this.Attitudes = Attitudes;
     }
 }
