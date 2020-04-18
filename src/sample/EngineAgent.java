@@ -5,6 +5,7 @@ import jade.core.Agent;
 import jade.core.behaviours.*;
 import jade.lang.acl.ACLMessage;
 import jade.wrapper.AgentController;
+import jade.wrapper.ControllerException;
 import jade.wrapper.StaleProxyException;
 
 import javax.swing.*;
@@ -259,7 +260,18 @@ public class EngineAgent extends Agent {
                             }
 
                             JOptionPane.showMessageDialog(null,"SIMULATION DONE! RESULTS AND LOGS AVAILABLE!");
-                            myAgent.doSuspend();
+                            //kill container smoothly
+                            Thread t = new Thread() {
+                                public void run() {
+                                    try {
+                                        myAgent.getContainerController().kill();
+                                    } catch (StaleProxyException e) {
+                                        e.printStackTrace();
+                                    }
+                                }
+                            };
+                            t.start();
+
                         }
                         //INCREMENT TURNS
                         turnsTaken++;

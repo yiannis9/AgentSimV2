@@ -22,6 +22,7 @@ import javafx.stage.Stage;
 import java.io.FileReader;
 import java.util.*;
 
+import javafx.stage.WindowEvent;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.JSONParser;
@@ -42,6 +43,17 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         //set the title for our stage
         primaryStage.setTitle("AgentSim");
+
+        primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
+            @Override
+            public void handle(WindowEvent event) {
+                try {
+                    stop();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
 
         createMainMenu(primaryStage);
 

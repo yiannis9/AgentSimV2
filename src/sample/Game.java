@@ -1,10 +1,13 @@
 package sample;
 
 import jade.core.*;
+import jade.core.Runtime;
 import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
+import jade.wrapper.ControllerException;
 import jade.wrapper.StaleProxyException;
 
+import javafx.application.Platform;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -19,6 +22,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Objects;
 import java.util.logging.FileHandler;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
@@ -34,7 +38,7 @@ public class Game {
     public ArrayList<String> rolesList;
     public Logger logger;
     public jade.core.Runtime runtime;
-    private Integer turnsTaken=1;
+    private final Integer turnsTaken=1;
     public HashMap<String, int[]> agentsGrid;
     public ContainerController container;
     public Groups groups;
@@ -59,14 +63,14 @@ public class Game {
         initLogger();
 
         //create exit button
-        genExitBtn();
+        genExitBtn(container,runtime,canvas);
 
         //calling method that creates the top menu displaying agents and turns
         createMenuBar(Turns, Agents);
         canvas.setCenter(grid);
 
         //initialise agents
-        initAgents(grid,Agents,Turns,logger,ruleList,groups);
+        initAgents(grid,Agents,Turns,logger,ruleList,groups,runtime);
 
     }
 
@@ -82,16 +86,19 @@ public class Game {
 
     }
 
-    public void genExitBtn(){
+    public void genExitBtn(ContainerController container, jade.core.Runtime runtime, BorderPane canvas){
         // Exit Button
         Button exitBtn = new Button("Exit");
         exitBtn.setOnAction(new EventHandler<ActionEvent>() {
 
             @Override
             public void handle(ActionEvent e) {
+                Runtime.instance().setCloseVM(true);
+                Runtime.instance().shutDown();
+                Platform.setImplicitExit(true);
+                Platform.exit();
                 Stage stage = (Stage) canvas.getScene().getWindow();
                 stage.close();
-                runtime.shutDown();
 
             }
         });
@@ -130,7 +137,7 @@ public class Game {
     }
 
     //initialise all agents method and order them in grid
-    public void initAgents (GridPane grid,Integer Agents, Integer Turns, Logger logger, ArrayList<Rule> ruleList,Groups groups) {
+    public void initAgents (GridPane grid,Integer Agents, Integer Turns, Logger logger, ArrayList<Rule> ruleList,Groups groups, jade.core.Runtime runtime) {
         // init agents
         AgentController agent = null;
         VisAgent guiAgent = null;
@@ -145,7 +152,7 @@ public class Game {
             ContainerController container = runtime.createMainContainer(profile);
 
             //create Engine agent which handles all other agents
-            Object argsEngine[] = new Object[5];
+            Object[] argsEngine = new Object[5];
             argsEngine[0] = Turns;
             argsEngine[1] = logger;
             argsEngine[2] = Agents;
@@ -181,7 +188,7 @@ public class Game {
         //tester function. creates agentLister which prints all agents in the container.
     public void initAgentLister (ContainerController container) throws StaleProxyException {
         Object reference = new Object();
-        Object args[] = new Object[1];
+        Object[] args = new Object[1];
         args[0] = reference;
         AgentController agentLister = container.createNewAgent("agentLister",
                 AgentLister.class.getName(),

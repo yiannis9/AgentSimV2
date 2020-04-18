@@ -1,655 +1,763 @@
-Mar 31, 2020 2:05:11 PM sample.Game initLogger
+Apr 18, 2020 10:11:49 PM sample.Game initLogger
 INFO: LOGGER INITIALISED
-Mar 31, 2020 2:05:14 PM sample.EngineAgent setup
+Apr 18, 2020 10:11:49 PM sample.EngineAgent setup
 INFO: GAME ENGINE AGENT INITIALISED. Agents:10 /Turns:10
-Mar 31, 2020 2:05:14 PM sample.SimAgent setup
-INFO: agent-2(General Accountant - Profit Maximiser) has been initialised
-Mar 31, 2020 2:05:14 PM sample.SimAgent setup
-INFO: agent-3(HR Assistant - Profit Maximiser) has been initialised
-Mar 31, 2020 2:05:14 PM sample.SimAgent setup
-INFO: agent-6(Chartered Legal Executive - Cautious) has been initialised
-Mar 31, 2020 2:05:14 PM sample.SimAgent setup
-INFO: agent-5(Accounting Clerk - Randomiser) has been initialised
-Mar 31, 2020 2:05:14 PM sample.SimAgent setup
-INFO: agent-4(Accounting Clerk - Cautious) has been initialised
-Mar 31, 2020 2:05:14 PM sample.SimAgent setup
-INFO: agent-1(General Accountant - Randomiser) has been initialised
-Mar 31, 2020 2:05:14 PM sample.SimAgent setup
-INFO: agent-0(HRO Manager - Profit Maximiser) has been initialised
-Mar 31, 2020 2:05:14 PM sample.SimAgent setup
-INFO: agent-7(Accounting Clerk - Profit Maximiser) has been initialised
-Mar 31, 2020 2:05:14 PM sample.SimAgent setup
-INFO: agent-9(Accounting Clerk - Randomiser) has been initialised
-Mar 31, 2020 2:05:14 PM sample.SimAgent setup
-INFO: agent-8(Accounting Clerk - Cautious) has been initialised
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$1 action
-INFO: 4 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$2 action
-WARNING: agent-1 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$2 action
-WARNING: agent-2 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$2 action
-WARNING: agent-6 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$2 action
-WARNING: agent-8 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$3 onTick
-INFO: 4 REPLIES RECEIVED
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-1 : Should only use trusted networks to connect to from any device. ==> Choice: A
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 550, 0.45
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 550, 0.45 because of agent-1's decisions.
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-2 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: A
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 700, 0.6
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 700, 0.6 because of agent-2's decisions.
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-6 : Your account has been compromised. ==> Choice: B
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 900, 0.48
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 900, 0.48 because of agent-6's decisions.
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-8 : Should only use trusted networks to connect to from any device. ==> Choice: A
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$4 action
-INFO: agent-8 now has 550, 0.45
-Mar 31, 2020 2:05:17 PM sample.EngineAgent$1$5 action
-INFO: TURN 1 HAS ENDED.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$1 action
-INFO: 4 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$2 action
-WARNING: agent-0 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$2 action
-WARNING: agent-2 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$2 action
-WARNING: agent-7 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$2 action
-WARNING: agent-9 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$3 onTick
-INFO: 4 REPLIES RECEIVED
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-0 : Your account has been compromised. ==> Choice: B
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-0 now has 700, 0.4
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-3 now has 700, 0.4 because of agent-0's decisions.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-4 now has 700, 0.4 because of agent-0's decisions.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-5 now has 700, 0.4 because of agent-0's decisions.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-9 now has 700, 0.4 because of agent-0's decisions.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-2 : Your account has been compromised. ==> Choice: B
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 1400, 0.384
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 1400, 0.384 because of agent-2's decisions.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-7 : Your account has been compromised. ==> Choice: B
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 750, 0.36000000000000004
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 1050, 0.36000000000000004 because of agent-7's decisions.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-9 : Your account has been compromised. ==> Choice: A
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-9 now has 800, 0.44000000000000006
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-0 now has 800, 0.44000000000000006 because of agent-9's decisions.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-3 now has 800, 0.44000000000000006 because of agent-9's decisions.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-4 now has 800, 0.44000000000000006 because of agent-9's decisions.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$4 action
-INFO: agent-5 now has 800, 0.44000000000000006 because of agent-9's decisions.
-Mar 31, 2020 2:05:18 PM sample.EngineAgent$1$5 action
-INFO: TURN 2 HAS ENDED.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$1 action
-INFO: 8 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$2 action
-WARNING: agent-1 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$2 action
-WARNING: agent-2 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$2 action
-WARNING: agent-3 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$2 action
-WARNING: agent-5 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$2 action
-WARNING: agent-6 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$2 action
-WARNING: agent-7 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$2 action
-WARNING: agent-8 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$2 action
-WARNING: agent-9 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$3 onTick
-INFO: 8 REPLIES RECEIVED
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-2 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: A
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 1900, 0.4608
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 1600, 0.4608 because of agent-2's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-1 : Your account has been compromised. ==> Choice: B
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 1250, 0.28800000000000003
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 1250, 0.28800000000000003 because of agent-1's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-3 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: B
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-3 now has 1000, 0.528
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-0 now has 1300, 0.528 because of agent-3's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-4 now has 1000, 0.528 because of agent-3's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-5 now has 1000, 0.528 because of agent-3's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-9 now has 1300, 0.528 because of agent-3's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-5 : Your account has been compromised. ==> Choice: B
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-5 now has 1200, 0.42240000000000005
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-0 now has 1500, 0.42240000000000005 because of agent-5's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-3 now has 1200, 0.42240000000000005 because of agent-5's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-4 now has 1200, 0.42240000000000005 because of agent-5's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-9 now has 1500, 0.42240000000000005 because of agent-5's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-6 : Your account has been compromised. ==> Choice: B
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 1800, 0.36864
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 2100, 0.36864 because of agent-6's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-7 : Your account has been compromised. ==> Choice: B
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 1450, 0.23040000000000005
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 1450, 0.23040000000000005 because of agent-7's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-8 : Your account has been compromised. ==> Choice: B
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-8 now has 1050, 0.36000000000000004
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-9 : Your account has been compromised. ==> Choice: A
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-9 now has 1600, 0.4646400000000001
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-0 now has 1600, 0.4646400000000001 because of agent-9's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-3 now has 1300, 0.4646400000000001 because of agent-9's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-4 now has 1300, 0.4646400000000001 because of agent-9's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$4 action
-INFO: agent-5 now has 1300, 0.4646400000000001 because of agent-9's decisions.
-Mar 31, 2020 2:05:19 PM sample.EngineAgent$1$5 action
-INFO: TURN 3 HAS ENDED.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$1 action
-INFO: 7 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$2 action
-WARNING: agent-0 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$2 action
-WARNING: agent-2 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$2 action
-WARNING: agent-3 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$2 action
-WARNING: agent-4 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$2 action
-WARNING: agent-5 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$2 action
-WARNING: agent-6 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$2 action
-WARNING: agent-9 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$3 onTick
-INFO: 7 REPLIES RECEIVED
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-0 : Should only use trusted networks to connect to from any device. ==> Choice: B
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-0 now has 1750, 0.6504960000000001
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-3 now has 1750, 0.6504960000000001 because of agent-0's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-4 now has 1450, 0.6504960000000001 because of agent-0's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-5 now has 1750, 0.6504960000000001 because of agent-0's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-9 now has 2050, 0.6504960000000001 because of agent-0's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-2 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: B
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 2600, 0.44236800000000004
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 2300, 0.44236800000000004 because of agent-2's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-3 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: B
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-3 now has 1950, 0.7805952
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-0 now has 1950, 0.7805952 because of agent-3's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-4 now has 1650, 0.7805952 because of agent-3's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-5 now has 1950, 0.7805952 because of agent-3's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-9 now has 2250, 0.7805952 because of agent-3's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-6 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 2400, 0.30965760000000003
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 2700, 0.30965760000000003 because of agent-6's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-9 : Should only use trusted networks to connect to from any device. ==> Choice: A
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-9 now has 2300, 0.7025356800000001
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-0 now has 2000, 0.7025356800000001 because of agent-9's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-3 now has 2000, 0.7025356800000001 because of agent-9's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-4 now has 1700, 0.7025356800000001 because of agent-9's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-5 now has 2000, 0.7025356800000001 because of agent-9's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-5 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: B
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-5 now has 2200, 0.8430428160000001
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-0 now has 2200, 0.8430428160000001 because of agent-5's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-3 now has 2200, 0.8430428160000001 because of agent-5's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-4 now has 1900, 0.8430428160000001 because of agent-5's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-9 now has 2500, 0.8430428160000001 because of agent-5's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-4 : Should only use trusted networks to connect to from any device. ==> Choice: A
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-4 now has 1950, 0.7587385344
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-0 now has 2250, 0.7587385344 because of agent-4's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-3 now has 2250, 0.7587385344 because of agent-4's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-5 now has 2250, 0.7587385344 because of agent-4's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$4 action
-INFO: agent-9 now has 2550, 0.7587385344 because of agent-4's decisions.
-Mar 31, 2020 2:05:20 PM sample.EngineAgent$1$5 action
-INFO: TURN 4 HAS ENDED.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$1 action
+Apr 18, 2020 10:11:49 PM sample.SimAgent setup
+INFO: agent-5(Help Desk Support - Randomiser) has been initialised
+Apr 18, 2020 10:11:49 PM sample.SimAgent setup
+INFO: agent-3(Help Desk Support - Cautious) has been initialised
+Apr 18, 2020 10:11:49 PM sample.SimAgent setup
+INFO: agent-0(General Accountant - Cautious) has been initialised
+Apr 18, 2020 10:11:49 PM sample.SimAgent setup
+INFO: agent-2(Help Desk Support - Randomiser) has been initialised
+Apr 18, 2020 10:11:49 PM sample.SimAgent setup
+INFO: agent-9(Help Desk Support - Cautious) has been initialised
+Apr 18, 2020 10:11:49 PM sample.SimAgent setup
+INFO: agent-8(Help Desk Support - Cautious) has been initialised
+Apr 18, 2020 10:11:49 PM sample.SimAgent setup
+INFO: agent-7(Help Desk Support - Cautious) has been initialised
+Apr 18, 2020 10:11:49 PM sample.SimAgent setup
+INFO: agent-4(Help Desk Support - Profit Maximiser) has been initialised
+Apr 18, 2020 10:11:49 PM sample.SimAgent setup
+INFO: agent-1(Help Desk Support - Cautious) has been initialised
+Apr 18, 2020 10:11:49 PM sample.SimAgent setup
+INFO: agent-6(Help Desk Support - Randomiser) has been initialised
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$1 action
 INFO: 6 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$2 action
-WARNING: agent-1 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$2 action
-WARNING: agent-2 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$2 action
-WARNING: agent-5 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$2 action
-WARNING: agent-6 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$2 action
-WARNING: agent-7 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$2 action
-WARNING: agent-8 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$3 onTick
-INFO: 6 REPLIES RECEIVED
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-2 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: A
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 3200, 0.37158912000000005
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 2900, 0.37158912000000005 because of agent-2's decisions.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-5 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: A
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-5 now has 2750, 0.91048624128
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-0 now has 2750, 0.91048624128 because of agent-5's decisions.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-3 now has 2750, 0.91048624128 because of agent-5's decisions.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-4 now has 2450, 0.91048624128 because of agent-5's decisions.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-9 now has 3050, 0.91048624128 because of agent-5's decisions.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-1 : Should only use trusted networks to connect to from any device. ==> Choice: B
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 1900, 0.32256000000000007
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 1900, 0.32256000000000007 because of agent-1's decisions.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-6 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 3000, 0.26011238400000003
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 3300, 0.26011238400000003 because of agent-6's decisions.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-7 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: A
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 2100, 0.3870720000000001
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 2100, 0.3870720000000001 because of agent-7's decisions.
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-8 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$4 action
-INFO: agent-8 now has 1450, 0.28800000000000003
-Mar 31, 2020 2:05:21 PM sample.EngineAgent$1$5 action
-INFO: TURN 5 HAS ENDED.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$1 action
-INFO: 5 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$2 action
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$2 action
 WARNING: agent-0 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$2 action
-WARNING: agent-1 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$2 action
-WARNING: agent-2 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$2 action
-WARNING: agent-6 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$2 action
-WARNING: agent-7 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$3 onTick
-INFO: 5 REPLIES RECEIVED
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-0 : Should only use trusted networks to connect to from any device. ==> Choice: B
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-0 now has 2900, 1.274680737792
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-3 now has 2900, 1.274680737792 because of agent-0's decisions.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-4 now has 2600, 1.274680737792 because of agent-0's decisions.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-5 now has 3200, 1.274680737792 because of agent-0's decisions.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-9 now has 3200, 1.274680737792 because of agent-0's decisions.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-1 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 2500, 0.27095040000000004
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 2500, 0.27095040000000004 because of agent-1's decisions.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-2 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: B
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 3800, 0.3121348608
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 3500, 0.3121348608 because of agent-2's decisions.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-6 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 3600, 0.21849440256
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 3900, 0.21849440256 because of agent-6's decisions.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-7 : Should only use trusted networks to connect to from any device. ==> Choice: B
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 2650, 0.37933056000000004
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 2650, 0.37933056000000004 because of agent-7's decisions.
-Mar 31, 2020 2:05:22 PM sample.EngineAgent$1$5 action
-INFO: TURN 6 HAS ENDED.
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$1 action
-INFO: 2 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$2 action
-WARNING: agent-6 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$2 action
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$2 action
+WARNING: agent-2 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$2 action
+WARNING: agent-3 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$2 action
+WARNING: agent-4 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$2 action
+WARNING: agent-5 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$2 action
 WARNING: agent-7 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$3 onTick
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$3 onTick
 INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$3 onTick
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$3 onTick
 INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$3 onTick
-INFO: 2 REPLIES RECEIVED
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-6 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 4000, 0.15294608179199998
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 4300, 0.15294608179199998 because of agent-6's decisions.
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-7 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: A
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 3150, 0.455196672
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 3150, 0.455196672 because of agent-7's decisions.
-Mar 31, 2020 2:05:23 PM sample.EngineAgent$1$5 action
-INFO: TURN 7 HAS ENDED.
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$1 action
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$3 onTick
+INFO: 6 REPLIES RECEIVED
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-0 : Should only use trusted networks to connect to from any device. ==> Choice: A
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 550, 0.45
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 550, 0.45 because of agent-0's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-4 now has 550, 0.45 because of agent-0's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-5 now has 550, 0.45 because of agent-0's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-6 now has 550, 0.45 because of agent-0's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-2 : Your account has been compromised. ==> Choice: A
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 600, 0.55
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 600, 0.55 because of agent-2's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 600, 0.55 because of agent-2's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-3 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 700, 0.44000000000000006
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 700, 0.44000000000000006 because of agent-3's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 700, 0.44000000000000006 because of agent-3's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-4 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: B
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-4 now has 750, 0.54
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 750, 0.54 because of agent-4's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 750, 0.54 because of agent-4's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-5 now has 750, 0.54 because of agent-4's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-6 now has 750, 0.54 because of agent-4's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-5 : Should only use trusted networks to connect to from any device. ==> Choice: B
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-5 now has 900, 0.756
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 900, 0.756 because of agent-5's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 900, 0.756 because of agent-5's decisions.
+Apr 18, 2020 10:11:52 PM sample.EngineAgent$1$4 action
+INFO: agent-4 now has 900, 0.756 because of agent-5's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-6 now has 900, 0.756 because of agent-5's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-7 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 800, 0.308
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 800, 0.308 because of agent-7's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 800, 0.308 because of agent-7's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$5 action
+INFO: TURN 1 HAS ENDED.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$1 action
 INFO: 5 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$2 action
-WARNING: agent-1 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$2 action
-WARNING: agent-2 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$2 action
-WARNING: agent-6 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$2 action
-WARNING: agent-7 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$2 action
-WARNING: agent-8 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$3 onTick
-INFO: 5 REPLIES RECEIVED
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-1 : Should only use trusted networks to connect to from any device. ==> Choice: A
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 3200, 0.4096770048
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 3500, 0.4096770048 because of agent-1's decisions.
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-2 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: A
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 4500, 0.18353529815039996
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 4500, 0.18353529815039996 because of agent-2's decisions.
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-6 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 4600, 0.12847470870527997
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 4600, 0.12847470870527997 because of agent-6's decisions.
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-7 : Your account has been compromised. ==> Choice: B
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 3700, 0.32774160384000006
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 3400, 0.32774160384000006 because of agent-7's decisions.
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-8 : Your account has been compromised. ==> Choice: B
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$4 action
-INFO: agent-8 now has 1950, 0.23040000000000005
-Mar 31, 2020 2:05:24 PM sample.EngineAgent$1$5 action
-INFO: TURN 8 HAS ENDED.
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$1 action
-INFO: 2 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$2 action
-WARNING: agent-2 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$2 action
-WARNING: agent-6 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$3 onTick
-INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$3 onTick
-INFO: 2 REPLIES RECEIVED
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-2 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: A
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 5100, 0.15416965044633596
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 5100, 0.15416965044633596 because of agent-2's decisions.
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-6 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 5200, 0.12333572035706877
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 5200, 0.12333572035706877 because of agent-6's decisions.
-Mar 31, 2020 2:05:25 PM sample.EngineAgent$1$5 action
-INFO: TURN 9 HAS ENDED.
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$1 action
-INFO: 5 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$2 action
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$2 action
 WARNING: agent-1 has to postpone work to make a decision: Your account has been compromised.
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$2 action
-WARNING: agent-2 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$2 action
-WARNING: agent-6 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$2 action
-WARNING: agent-7 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$2 action
-WARNING: agent-8 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$3 onTick
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$2 action
+WARNING: agent-2 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$2 action
+WARNING: agent-3 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$2 action
+WARNING: agent-7 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$2 action
+WARNING: agent-9 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$3 onTick
 INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$3 onTick
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$3 onTick
 INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$3 onTick
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$3 onTick
 INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$3 onTick
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$3 onTick
 INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$3 onTick
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$3 onTick
 INFO: NEW MESSAGE IN ENGINE MAIL BOX
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$3 onTick
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$3 onTick
 INFO: 5 REPLIES RECEIVED
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-1 : Your account has been compromised. ==> Choice: A
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 3800, 0.3605157642240001
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 4100, 0.3605157642240001 because of agent-1's decisions.
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-7 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: A
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: agent-7 now has 4300, 0.4326189170688001
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: agent-1 now has 4000, 0.4326189170688001 because of agent-7's decisions.
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-2 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: A
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 5700, 0.1480028644284825
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 5700, 0.1480028644284825 because of agent-2's decisions.
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-1 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 1100, 0.6048
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 1400, 0.6048 because of agent-1's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-4 now has 1400, 0.6048 because of agent-1's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-5 now has 1400, 0.6048 because of agent-1's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-6 now has 1100, 0.6048 because of agent-1's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-2 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 1300, 0.2464
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 1300, 0.2464 because of agent-2's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 1300, 0.2464 because of agent-2's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-3 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 1500, 0.19712000000000002
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 1500, 0.19712000000000002 because of agent-3's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 1500, 0.19712000000000002 because of agent-3's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-7 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 1600, 0.15769600000000003
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 1600, 0.15769600000000003 because of agent-7's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 1600, 0.15769600000000003 because of agent-7's decisions.
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-9 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 600, 0.4
+Apr 18, 2020 10:11:53 PM sample.EngineAgent$1$5 action
+INFO: TURN 2 HAS ENDED.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$1 action
+INFO: 7 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$2 action
+WARNING: agent-2 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$2 action
+WARNING: agent-3 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$2 action
+WARNING: agent-5 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$2 action
+WARNING: agent-6 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$2 action
+WARNING: agent-7 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$2 action
+WARNING: agent-8 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$2 action
+WARNING: agent-9 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$3 onTick
+INFO: 7 REPLIES RECEIVED
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-2 : Your account has been compromised. ==> Choice: A
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 2000, 0.17346560000000005
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 2000, 0.17346560000000005 because of agent-2's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 2000, 0.17346560000000005 because of agent-2's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-3 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 2200, 0.13877248000000006
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 2200, 0.13877248000000006 because of agent-3's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 2200, 0.13877248000000006 because of agent-3's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-5 : Should only use trusted networks to connect to from any device. ==> Choice: B
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-5 now has 1550, 0.8467199999999999
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 1550, 0.8467199999999999 because of agent-5's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 1550, 0.8467199999999999 because of agent-5's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-4 now has 1550, 0.8467199999999999 because of agent-5's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-6 now has 1250, 0.8467199999999999 because of agent-5's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-6 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-6 now has 1350, 0.677376
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 1650, 0.677376 because of agent-6's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 1650, 0.677376 because of agent-6's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-4 now has 1650, 0.677376 because of agent-6's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-5 now has 1650, 0.677376 because of agent-6's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-7 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 2300, 0.09714073600000003
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 2300, 0.09714073600000003 because of agent-7's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 2300, 0.09714073600000003 because of agent-7's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-8 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-8 now has 700, 0.4
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 1100, 0.32000000000000006 because of agent-8's decisions.
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-9 : Should only use trusted networks to connect to from any device. ==> Choice: A
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 1150, 0.2880000000000001
+Apr 18, 2020 10:11:54 PM sample.EngineAgent$1$5 action
+INFO: TURN 3 HAS ENDED.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$1 action
+INFO: 4 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$2 action
+WARNING: agent-1 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$2 action
+WARNING: agent-3 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$2 action
+WARNING: agent-7 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$2 action
+WARNING: agent-9 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$3 onTick
+INFO: 4 REPLIES RECEIVED
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-1 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 1750, 0.5419008
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 1750, 0.5419008 because of agent-1's decisions.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: agent-4 now has 1750, 0.5419008 because of agent-1's decisions.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: agent-5 now has 2050, 0.5419008 because of agent-1's decisions.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: agent-6 now has 1750, 0.5419008 because of agent-1's decisions.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-3 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 2800, 0.07771258880000004
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 2800, 0.07771258880000004 because of agent-3's decisions.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 2800, 0.07771258880000004 because of agent-3's decisions.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-7 : Should only use trusted networks to connect to from any device. ==> Choice: A
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 2850, 0.06994132992000003
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 2850, 0.06994132992000003 because of agent-7's decisions.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 2850, 0.06994132992000003 because of agent-7's decisions.
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-9 : Should only use trusted networks to connect to from any device. ==> Choice: A
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 1500, 0.2592000000000001
+Apr 18, 2020 10:11:55 PM sample.EngineAgent$1$5 action
+INFO: TURN 4 HAS ENDED.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$1 action
+INFO: 7 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$2 action
+WARNING: agent-2 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$2 action
+WARNING: agent-3 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$2 action
+WARNING: agent-4 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$2 action
+WARNING: agent-5 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$2 action
+WARNING: agent-7 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$2 action
+WARNING: agent-8 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$2 action
+WARNING: agent-9 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$3 onTick
+INFO: 7 REPLIES RECEIVED
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-2 : Your account has been compromised. ==> Choice: A
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 2950, 0.07693546291200004
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 3250, 0.07693546291200004 because of agent-2's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 3250, 0.07693546291200004 because of agent-2's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-5 : Should only use trusted networks to connect to from any device. ==> Choice: A
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-5 now has 2100, 0.48771072
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 1800, 0.48771072 because of agent-5's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 2100, 0.48771072 because of agent-5's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-4 now has 1800, 0.48771072 because of agent-5's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-6 now has 1800, 0.48771072 because of agent-5's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-3 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 3450, 0.06154837032960003
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 3150, 0.06154837032960003 because of agent-3's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 3450, 0.06154837032960003 because of agent-3's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-7 : Should only use trusted networks to connect to from any device. ==> Choice: A
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 3500, 0.055393533296640034
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 3200, 0.055393533296640034 because of agent-7's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 3500, 0.055393533296640034 because of agent-7's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-4 : Should only use trusted networks to connect to from any device. ==> Choice: B
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-4 now has 1950, 0.6827950079999999
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 1950, 0.6827950079999999 because of agent-4's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 2250, 0.6827950079999999 because of agent-4's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-5 now has 2250, 0.6827950079999999 because of agent-4's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-6 now has 1950, 0.6827950079999999 because of agent-4's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
 INFO: Response from agent-8 : Should only use trusted networks to connect to from any device. ==> Choice: A
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: agent-8 now has 2300, 0.20736000000000004
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: Response from agent-6 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: agent-6 now has 5800, 0.10360200509993775
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$4 action
-INFO: agent-2 now has 5800, 0.10360200509993775 because of agent-6's decisions.
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-8 now has 1050, 0.36000000000000004
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 1850, 0.2332800000000001 because of agent-8's decisions.
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-9 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 1950, 0.1866240000000001
+Apr 18, 2020 10:11:56 PM sample.EngineAgent$1$5 action
+INFO: TURN 5 HAS ENDED.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$1 action
+INFO: 5 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$2 action
+WARNING: agent-2 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$2 action
+WARNING: agent-5 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$2 action
+WARNING: agent-6 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$2 action
+WARNING: agent-7 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$2 action
+WARNING: agent-8 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$3 onTick
+INFO: 5 REPLIES RECEIVED
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-2 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 3600, 0.03877547330764802
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 3900, 0.03877547330764802 because of agent-2's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 3900, 0.03877547330764802 because of agent-2's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-5 : Should only use trusted networks to connect to from any device. ==> Choice: B
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-5 now has 2700, 0.9559130111999998
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 2100, 0.9559130111999998 because of agent-5's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 2400, 0.9559130111999998 because of agent-5's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-4 now has 2400, 0.9559130111999998 because of agent-5's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-6 now has 2100, 0.9559130111999998 because of agent-5's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-8 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-8 now has 1450, 0.28800000000000003
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 2350, 0.14929920000000008 because of agent-8's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-7 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 4100, 0.03102037864611842
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 3800, 0.03102037864611842 because of agent-7's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 4100, 0.03102037864611842 because of agent-7's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-6 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: A
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-6 now has 2300, 1.1470956134399997
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-0 now has 2300, 1.1470956134399997 because of agent-6's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-1 now has 2600, 1.1470956134399997 because of agent-6's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-4 now has 2600, 1.1470956134399997 because of agent-6's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$4 action
+INFO: agent-5 now has 2900, 1.1470956134399997 because of agent-6's decisions.
+Apr 18, 2020 10:11:57 PM sample.EngineAgent$1$5 action
+INFO: TURN 6 HAS ENDED.
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$1 action
+INFO: 4 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$2 action
+WARNING: agent-2 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$2 action
+WARNING: agent-3 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$2 action
+WARNING: agent-7 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$2 action
+WARNING: agent-9 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$3 onTick
+INFO: 4 REPLIES RECEIVED
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-9 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 2450, 0.11943936000000006
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-2 : Should only use trusted networks to connect to from any device. ==> Choice: A
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 4150, 0.027918340781506578
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 4150, 0.027918340781506578 because of agent-2's decisions.
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 4450, 0.027918340781506578 because of agent-2's decisions.
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-7 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 4650, 0.022334672625205262
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 4350, 0.022334672625205262 because of agent-7's decisions.
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 4350, 0.022334672625205262 because of agent-7's decisions.
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-3 : Should only use trusted networks to connect to from any device. ==> Choice: A
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 4400, 0.020101205362684737
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 4400, 0.020101205362684737 because of agent-3's decisions.
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 4700, 0.020101205362684737 because of agent-3's decisions.
+Apr 18, 2020 10:11:58 PM sample.EngineAgent$1$5 action
+INFO: TURN 7 HAS ENDED.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$1 action
+INFO: 5 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$2 action
+WARNING: agent-2 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$2 action
+WARNING: agent-3 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$2 action
+WARNING: agent-7 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$2 action
+WARNING: agent-8 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$2 action
+WARNING: agent-9 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$3 onTick
+INFO: 5 REPLIES RECEIVED
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-2 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: B
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 4900, 0.024121446435221683
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 4900, 0.024121446435221683 because of agent-2's decisions.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 5200, 0.024121446435221683 because of agent-2's decisions.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-8 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: agent-8 now has 1850, 0.23040000000000005
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 2850, 0.09555148800000006 because of agent-8's decisions.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-7 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 5400, 0.019297157148177348
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 5100, 0.019297157148177348 because of agent-7's decisions.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 5100, 0.019297157148177348 because of agent-7's decisions.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-9 : Should only use trusted networks to connect to from any device. ==> Choice: A
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 2900, 0.08599633920000005
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-3 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 5300, 0.015437725718541878
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 5300, 0.015437725718541878 because of agent-3's decisions.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 5600, 0.015437725718541878 because of agent-3's decisions.
+Apr 18, 2020 10:11:59 PM sample.EngineAgent$1$5 action
+INFO: TURN 8 HAS ENDED.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$1 action
+INFO: 5 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$2 action
+WARNING: agent-2 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$2 action
+WARNING: agent-3 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$2 action
+WARNING: agent-7 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$2 action
+WARNING: agent-8 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$2 action
+WARNING: agent-9 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$3 onTick
+INFO: 5 REPLIES RECEIVED
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-2 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 5700, 0.010806408002979315
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 5700, 0.010806408002979315 because of agent-2's decisions.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 6000, 0.010806408002979315 because of agent-2's decisions.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-3 : Should only use trusted networks to connect to from any device. ==> Choice: A
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 5750, 0.009725767202681384
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 5750, 0.009725767202681384 because of agent-3's decisions.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 6050, 0.009725767202681384 because of agent-3's decisions.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-7 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 6150, 0.006808037041876968
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 5850, 0.006808037041876968 because of agent-7's decisions.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 5850, 0.006808037041876968 because of agent-7's decisions.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-8 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: agent-8 now has 2250, 0.18432000000000004
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 3300, 0.06879707136000004 because of agent-8's decisions.
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-9 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 3500, 0.05503765708800004
+Apr 18, 2020 10:12:00 PM sample.EngineAgent$1$5 action
+INFO: TURN 9 HAS ENDED.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$1 action
+INFO: 5 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$2 action
+WARNING: agent-2 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$2 action
+WARNING: agent-3 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$2 action
+WARNING: agent-7 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$2 action
+WARNING: agent-8 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$2 action
+WARNING: agent-9 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$3 onTick
+INFO: 5 REPLIES RECEIVED
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-2 : Your account has been compromised. ==> Choice: B
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 6350, 0.005446429633501575
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 6350, 0.005446429633501575 because of agent-2's decisions.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 6650, 0.005446429633501575 because of agent-2's decisions.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-3 : Should only use trusted networks to connect to from any device. ==> Choice: A
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 6400, 0.004901786670151418
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 6400, 0.004901786670151418 because of agent-3's decisions.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 6700, 0.004901786670151418 because of agent-3's decisions.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-8 : Passwords must be changed if they have been used for a large amount of time. ==> Choice: B
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: agent-8 now has 2650, 0.12902400000000003
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 3900, 0.038526359961600025 because of agent-8's decisions.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-7 : The 'Tick' ransomware attacks! All your files have been encrypted. ==> Choice: A
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: agent-7 now has 6800, 0.003921429336121134
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: agent-2 now has 6500, 0.003921429336121134 because of agent-7's decisions.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: agent-3 now has 6500, 0.003921429336121134 because of agent-7's decisions.
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: Response from agent-9 : Should only use trusted networks to connect to from any device. ==> Choice: A
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$4 action
+INFO: agent-9 now has 3950, 0.03467372396544002
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
 INFO: TURN 10 HAS ENDED.
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
 INFO: 
 ------SIMULATION ENDED------
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
 INFO: 
 ----------------------------
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
 INFO: 
 ------AGENT SCORES:------
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
-INFO: agent-0 ==> Points: 3200, Rate: 1.274680737792
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
-INFO: agent-1 ==> Points: 4300, Rate: 0.4326189170688001
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
-INFO: agent-2 ==> Points: 6100, Rate: 0.10360200509993775
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
-INFO: agent-3 ==> Points: 2900, Rate: 1.274680737792
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
-INFO: agent-4 ==> Points: 2600, Rate: 1.274680737792
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
-INFO: agent-5 ==> Points: 3200, Rate: 1.274680737792
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
-INFO: agent-6 ==> Points: 6100, Rate: 0.10360200509993775
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
-INFO: agent-7 ==> Points: 4600, Rate: 0.4326189170688001
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
-INFO: agent-8 ==> Points: 2600, Rate: 0.20736000000000004
-Mar 31, 2020 2:05:26 PM sample.EngineAgent$1$5 action
-INFO: agent-9 ==> Points: 3200, Rate: 1.274680737792
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
+INFO: agent-0 ==> Points: 2300, Rate: 1.1470956134399997
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
+INFO: agent-1 ==> Points: 2600, Rate: 1.1470956134399997
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
+INFO: agent-2 ==> Points: 6800, Rate: 0.003921429336121134
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
+INFO: agent-3 ==> Points: 6800, Rate: 0.003921429336121134
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
+INFO: agent-4 ==> Points: 2600, Rate: 1.1470956134399997
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
+INFO: agent-5 ==> Points: 3200, Rate: 1.1470956134399997
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
+INFO: agent-6 ==> Points: 2600, Rate: 1.1470956134399997
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
+INFO: agent-7 ==> Points: 7100, Rate: 0.003921429336121134
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
+INFO: agent-8 ==> Points: 2950, Rate: 0.12902400000000003
+Apr 18, 2020 10:12:01 PM sample.EngineAgent$1$5 action
+INFO: agent-9 ==> Points: 4250, Rate: 0.03467372396544002
+Apr 18, 2020 10:12:03 PM sample.EngineAgent$1$1 action
+INFO: 5 NEW DECISIONS FOR AGENTS TO TAKE THIS TURN!
+Apr 18, 2020 10:12:03 PM sample.EngineAgent$1$2 action
+WARNING: agent-2 has to postpone work to make a decision: Your account has been compromised.
+Apr 18, 2020 10:12:03 PM sample.EngineAgent$1$2 action
+WARNING: agent-3 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
+Apr 18, 2020 10:12:03 PM sample.EngineAgent$1$2 action
+WARNING: agent-7 has to postpone work to make a decision: Should only use trusted networks to connect to from any device.
+Apr 18, 2020 10:12:03 PM sample.EngineAgent$1$2 action
+WARNING: agent-8 has to postpone work to make a decision: The 'Tick' ransomware attacks! All your files have been encrypted.
+Apr 18, 2020 10:12:03 PM sample.EngineAgent$1$2 action
+WARNING: agent-9 has to postpone work to make a decision: Passwords must be changed if they have been used for a large amount of time.
+Apr 18, 2020 10:12:03 PM sample.EngineAgent$1$3 onTick
+INFO: NEW MESSAGE IN ENGINE MAIL BOX
