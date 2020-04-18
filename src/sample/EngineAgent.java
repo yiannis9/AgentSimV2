@@ -261,6 +261,7 @@ public class EngineAgent extends Agent {
 
                             JOptionPane.showMessageDialog(null,"SIMULATION DONE! RESULTS AND LOGS AVAILABLE!");
                             //kill container smoothly
+                            myAgent.doSuspend();
                             Thread t = new Thread() {
                                 public void run() {
                                     try {

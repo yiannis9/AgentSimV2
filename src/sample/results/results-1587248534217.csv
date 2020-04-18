@@ -1,0 +1,216 @@
+Agent Name,Position,Department,Action Degree,Rule Description,CID,Rewardthreat Change,Infection Method
+agent-0,Controller,Finance,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-0
+agent-1,General Accountant,Finance,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-0
+agent-2,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-0
+agent-4,Accounting Clerk,Finance,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-0
+agent-6,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-0
+agent-1,General Accountant,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-1
+agent-0,Controller,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-1
+agent-2,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-1
+agent-4,Accounting Clerk,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-1
+agent-6,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-1
+agent-2,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-0,Controller,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-1,General Accountant,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-4,Accounting Clerk,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-6,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-3,Hardware Technician,IT,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-3
+agent-8,CTO,IT,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-3
+agent-9,CTO,IT,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-3
+agent-4,Accounting Clerk,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-4
+agent-0,Controller,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-4
+agent-1,General Accountant,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-4
+agent-2,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-4
+agent-6,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-4
+agent-6,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-0,Controller,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-1,General Accountant,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-2,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-4,Accounting Clerk,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-7,Social Media Manager,Multimedia,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-7
+agent-5,Social Media Manager,Multimedia,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-7
+agent-9,CTO,IT,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-9
+agent-3,Hardware Technician,IT,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-9
+agent-8,CTO,IT,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-9
+agent-2,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-0,Controller,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-1,General Accountant,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-4,Accounting Clerk,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-6,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-3,Hardware Technician,IT,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-3
+agent-8,CTO,IT,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-3
+agent-9,CTO,IT,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-3
+agent-5,Social Media Manager,Multimedia,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-5
+agent-7,Social Media Manager,Multimedia,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-5
+agent-9,CTO,IT,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-9
+agent-3,Hardware Technician,IT,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-9
+agent-8,CTO,IT,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-9
+agent-6,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-6
+agent-0,Controller,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-6
+agent-1,General Accountant,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-6
+agent-2,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-6
+agent-4,Accounting Clerk,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-6
+agent-3,Hardware Technician,IT,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-3
+agent-8,CTO,IT,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-3
+agent-9,CTO,IT,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-3
+agent-5,Social Media Manager,Multimedia,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-5
+agent-7,Social Media Manager,Multimedia,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-5
+agent-0,Controller,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-0
+agent-1,General Accountant,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-0
+agent-2,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-0
+agent-4,Accounting Clerk,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-0
+agent-6,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-0
+agent-4,Accounting Clerk,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-0,Controller,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-1,General Accountant,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-2,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-6,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-6,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-0,Controller,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-1,General Accountant,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-2,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-4,Accounting Clerk,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-1,General Accountant,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-1
+agent-0,Controller,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-1
+agent-2,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-1
+agent-4,Accounting Clerk,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-1
+agent-6,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-1
+agent-2,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-2
+agent-0,Controller,Finance,2,Your account has been compromised.,B,2000.8,agent-2
+agent-1,General Accountant,Finance,2,Your account has been compromised.,B,2000.8,agent-2
+agent-4,Accounting Clerk,Finance,2,Your account has been compromised.,B,2000.8,agent-2
+agent-6,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-2
+agent-3,Hardware Technician,IT,2,Your account has been compromised.,B,2000.8,agent-3
+agent-8,CTO,IT,2,Your account has been compromised.,B,2000.8,agent-3
+agent-9,CTO,IT,2,Your account has been compromised.,B,2000.8,agent-3
+agent-4,Accounting Clerk,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-4
+agent-0,Controller,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-4
+agent-1,General Accountant,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-4
+agent-2,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-4
+agent-6,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-4
+agent-6,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-0,Controller,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-1,General Accountant,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-2,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-4,Accounting Clerk,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-7,Social Media Manager,Multimedia,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-7
+agent-5,Social Media Manager,Multimedia,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-7
+agent-0,Controller,Finance,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-0
+agent-1,General Accountant,Finance,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-0
+agent-2,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-0
+agent-4,Accounting Clerk,Finance,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-0
+agent-6,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-0
+agent-1,General Accountant,Finance,2,Your account has been compromised.,B,2000.8,agent-1
+agent-0,Controller,Finance,2,Your account has been compromised.,B,2000.8,agent-1
+agent-2,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-1
+agent-4,Accounting Clerk,Finance,2,Your account has been compromised.,B,2000.8,agent-1
+agent-6,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-1
+agent-3,Hardware Technician,IT,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-3
+agent-8,CTO,IT,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-3
+agent-9,CTO,IT,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-3
+agent-2,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-2
+agent-0,Controller,Finance,2,Your account has been compromised.,B,2000.8,agent-2
+agent-1,General Accountant,Finance,2,Your account has been compromised.,B,2000.8,agent-2
+agent-4,Accounting Clerk,Finance,2,Your account has been compromised.,B,2000.8,agent-2
+agent-6,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-2
+agent-7,Social Media Manager,Multimedia,2,Your account has been compromised.,B,2000.8,agent-7
+agent-5,Social Media Manager,Multimedia,2,Your account has been compromised.,B,2000.8,agent-7
+agent-8,CTO,IT,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-8
+agent-3,Hardware Technician,IT,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-8
+agent-9,CTO,IT,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-8
+agent-4,Accounting Clerk,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-4
+agent-0,Controller,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-4
+agent-1,General Accountant,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-4
+agent-2,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-4
+agent-6,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,A,500.9,agent-4
+agent-6,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-0,Controller,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-1,General Accountant,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-2,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-4,Accounting Clerk,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-0,Controller,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-0
+agent-1,General Accountant,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-0
+agent-2,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-0
+agent-4,Accounting Clerk,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-0
+agent-6,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-0
+agent-2,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-0,Controller,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-1,General Accountant,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-4,Accounting Clerk,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-6,Financial Analyst,Finance,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-2
+agent-1,General Accountant,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-1
+agent-0,Controller,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-1
+agent-2,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-1
+agent-4,Accounting Clerk,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-1
+agent-6,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-1
+agent-4,Accounting Clerk,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-0,Controller,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-1,General Accountant,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-2,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-6,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-5,Social Media Manager,Multimedia,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-5
+agent-7,Social Media Manager,Multimedia,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-5
+agent-7,Social Media Manager,Multimedia,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-7
+agent-5,Social Media Manager,Multimedia,2,Passwords must be changed if they have been used for a large amount of time.,A,2001.2,agent-7
+agent-0,Controller,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-0
+agent-1,General Accountant,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-0
+agent-2,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-0
+agent-4,Accounting Clerk,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-0
+agent-6,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-0
+agent-6,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-0,Controller,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-1,General Accountant,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-2,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-4,Accounting Clerk,Finance,2,Your account has been compromised.,B,2000.8,agent-6
+agent-7,Social Media Manager,Multimedia,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-7
+agent-5,Social Media Manager,Multimedia,2,Should only use trusted networks to connect to from any device.,B,1501.4,agent-7
+agent-0,Controller,Finance,2,Your account has been compromised.,A,1001.1,agent-0
+agent-1,General Accountant,Finance,2,Your account has been compromised.,A,1001.1,agent-0
+agent-2,Financial Analyst,Finance,2,Your account has been compromised.,A,1001.1,agent-0
+agent-4,Accounting Clerk,Finance,2,Your account has been compromised.,A,1001.1,agent-0
+agent-6,Financial Analyst,Finance,2,Your account has been compromised.,A,1001.1,agent-0
+agent-1,General Accountant,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-1
+agent-0,Controller,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-1
+agent-2,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-1
+agent-4,Accounting Clerk,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-1
+agent-6,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-1
+agent-2,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-2
+agent-0,Controller,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-2
+agent-1,General Accountant,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-2
+agent-4,Accounting Clerk,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-2
+agent-6,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,B,2001.2,agent-2
+agent-4,Accounting Clerk,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-0,Controller,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-1,General Accountant,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-2,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-6,Financial Analyst,Finance,2,Your account has been compromised.,B,2000.8,agent-4
+agent-6,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-0,Controller,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-1,General Accountant,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-2,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-4,Accounting Clerk,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-6
+agent-0,Controller,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-0
+agent-1,General Accountant,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-0
+agent-2,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-0
+agent-4,Accounting Clerk,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-0
+agent-6,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-0
+agent-1,General Accountant,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-1
+agent-0,Controller,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-1
+agent-2,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-1
+agent-4,Accounting Clerk,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-1
+agent-6,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-1
+agent-4,Accounting Clerk,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-4
+agent-0,Controller,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-4
+agent-1,General Accountant,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-4
+agent-2,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-4
+agent-6,Financial Analyst,Finance,2,The 'Tick' ransomware attacks! All your files have been encrypted.,A,1000.8,agent-4
+agent-2,Financial Analyst,Finance,2,Your account has been compromised.,A,1001.1,agent-2
+agent-0,Controller,Finance,2,Your account has been compromised.,A,1001.1,agent-2
+agent-1,General Accountant,Finance,2,Your account has been compromised.,A,1001.1,agent-2
+agent-4,Accounting Clerk,Finance,2,Your account has been compromised.,A,1001.1,agent-2
+agent-6,Financial Analyst,Finance,2,Your account has been compromised.,A,1001.1,agent-2
+agent-6,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-6
+agent-0,Controller,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-6
+agent-1,General Accountant,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-6
+agent-2,Financial Analyst,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-6
+agent-4,Accounting Clerk,Finance,2,Passwords must be changed if they have been used for a large amount of time.,B,1000.7,agent-6
